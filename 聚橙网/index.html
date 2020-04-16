@@ -7,10 +7,13 @@
     <!-- 清除默认样式 -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <!-- 引入js -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#left-list" data-offset="300">
     <!-- 头部开始 -->
     <div class="header">
         <div class="header-top">
@@ -285,38 +288,43 @@
     <!-- banner开始 -->
     <div class="banner">
         <div class="heart">
-            <div class="b-box">
-                <ul>
-                    <li><a href=""><img src="img/banner1.jpg" alt=""></a></li>
-                    <li><a href=""><img src="img/banner2.png" alt=""></a></li>
-                    <li><a href=""><img src="img/banner3.jpg" alt=""></a></li>
-                    <li><a href=""><img src="img/banner4.jpg" alt=""></a></li>
-                    <li><a href=""><img src="img/banner5.jpg" alt=""></a></li>
-                    <li><a href=""><img src="img/banner6.jpg" alt=""></a></li>
-                    <li><a href=""><img src="img/banner7.jpg" alt=""></a></li>
-                    <li><a href=""><img src="img/banner8.png" alt=""></a></li>
-                    <li><a href=""><img src="img/banner9.jpg" alt=""></a></li>
-                    <li><a href=""><img src="img/banner1.jpg" alt=""></a></li>
-                </ul>
-                <!-- 小圆点 -->
-                <div class="b-circle">
-                    <ul >
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                    </ul>
-                </div>
-                <span class="b-left"></span>
-                <span class="b-right"></span>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/banner1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner8.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner9.jpg" alt=""></div>
+                    </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev prev"></div>
+                <div class="swiper-button-next next"></div>
             </div>
         </div>
     </div>
+    <!-- swiper轮播插件 -->
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+        //   direction: 'vertical',
+          loop: true,
+        // 自动播放
+        autoplay:3000,
+        autoplayDisableOnInteraction : false,
+        speed:1000,
+          // 如果需要分页器
+          pagination: '.swiper-pagination',
+          paginationClickable :true,
+          // 如果需要前进后退按钮
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+        })        
+    </script>
     <!-- 欢聚橙卡 -->
     <div class="index-list">
         <div class="heart">
@@ -562,7 +570,7 @@
         </div>
     </div>
     <!-- 巡回演出 -->
-    <div class="tour">
+    <div class="tour" >
         <div class="heart">
             <div class="tour-h">
                 <h2>巡回演出</h2>
@@ -646,7 +654,7 @@
         </div>
     </div>
     <!-- 演唱会 -->
-    <div class="sing">
+    <div class="sing" id="one">
         <div class="heart">
             <!-- 标题 -->
             <div class="s-title">
@@ -716,7 +724,7 @@
         </div>
     </div>
     <!-- 音乐剧 -->
-    <div class="music">
+    <div class="music" id="two">
         <div class="heart">
             <!-- 标题 -->
             <div class="m-title tit">
@@ -785,7 +793,7 @@
         </div>
     </div>
     <!-- 舞台剧 -->
-    <div class="stage">
+    <div class="stage" id="three">
         <div class="heart">
             <!-- 标题 -->
             <div class="s-title tit">
@@ -855,7 +863,7 @@
         </div>
     </div>
     <!-- 儿童剧 -->
-    <div class="children">
+    <div class="children" id="four">
         <div class="heart">
             <!-- 标题 -->
             <div class="s-title tit">
@@ -927,7 +935,7 @@
         </div>
     </div>
     <!-- 音乐会 -->
-    <div class="concert">
+    <div class="concert" id="five">
         <div class="heart">
             <!-- 标题 -->
             <div class="s-title tit">
@@ -999,7 +1007,7 @@
         </div>
     </div>
     <!-- 展览休闲 -->
-    <div class="exhibition">
+    <div class="exhibition" id="six">
         <div class="heart">
             <!-- 标题 -->
             <div class="exh-tit">
@@ -1131,6 +1139,71 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- 右侧边栏 -->
+    <div class="right-nav">
+        <a href="">
+            <span class="kefu"></span>
+            <div class="kefu1"></div>
+        </a>
+        <a href="">
+            <span class="app"></span>
+            <div class="app1"></div>
+        </a>
+        <a href="">
+            <span class="iconfont icon-weixin weixin"></span>
+            <div class="weixin1"></div>
+        </a>
+        <a href="">
+            <span class="iconfont icon-dianhua dianhua"></span>
+            <div class="dianhua1"></div>
+        </a>
+        <a href="">
+            <span class="iconfont icon-dingbu dingbu"></span>
+            <div class="dingbu1"></div>
+        </a>
+    </div>
+    <!-- 右侧结束 -->
+    <!-- 左侧边栏 -->
+    <div class="left-list">
+        <ul>
+            <li>
+                <a href="#one">
+                    <span class="iconfont icon-huatong left-one"></span>
+                    <span class="ych">演唱会</span>
+                </a>
+            </li>
+            <li>
+                <a href="#two">
+                    <span class="iconfont icon-datiqin left-two"></span>
+                    <span class="yyj">音乐剧</span>
+                </a>
+            </li>
+            <li>
+                <a href="#three">
+                    <span class="iconfont icon-icon_xiaolian-xian left-three"></span>
+                    <span class="wtj">舞台剧</span>
+                </a>
+            </li>
+            <li>
+                <a href="#four">
+                    <span class="iconfont icon--muma left-four"></span>
+                    <span class="etj">儿童剧</span>
+                </a>
+            </li>
+            <li>
+                <a href="#five">
+                    <span class="iconfont icon-guigetubiao- left-five"></span>
+                    <span class="yyh">音乐会</span>
+                </a>
+            </li>
+            <li>
+                <a href="#six">
+                    <span class="iconfont icon-zhaopian left-six"></span>
+                    <span class="zl">展览休闲</span>
+                </a>
+            </li>
+        </ul>
     </div>
     <script src="js/index.js"></script>
 </body>

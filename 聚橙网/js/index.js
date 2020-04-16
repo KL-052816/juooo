@@ -1,57 +1,147 @@
-// banner图
-// 页面加载时，banner开始执行
-function banner2(a){
-    //改变left
-    $(".b-box ul").css("left",(a-1)*1200+"px")
-    //运动到最后一张的时候
-    if(a==-9){
-        //关闭过度
-        $(".b-box ul").css({"transition":"all 0s","left":"0px"}) 
-        //不知原因，不能去（暂未解决）
-        console.log(parseInt($(".b-box ul").css("left")))
-        //显示第一张
-        $(".b-box ul").css({"transition":"all 0.8s","left":"-1200px"})
-        //同时小圆点高亮
-        $(".b-circle>ul li").eq(0).css("opacity","1").siblings().css("opacity","0.4")
+// banner背景
+function beijing(a){
+    switch(a){
+        case 0:$(".banner").css("background","#55b5db");
+        break;
+        case 1:$(".banner").css("background","#1D1507");
+        break;
+        case 2:$(".banner").css("background","#054199");
+        break;
+        case 3:$(".banner").css("background","#FADC62");
+        break;
+        case 4:$(".banner").css("background","#C0B1C8");
+        break;
+        case 5:$(".banner").css("background","#4487CD");
+        break;
+        case 6:$(".banner").css("background","#B4252B");
+        break;
+        case 7:$(".banner").css("background","#212020");
+        break;
+        default:$(".banner").css("background","#F2EAC3");
+        break;
     }
-    //对应的小圆点高亮
-    $(".b-circle>ul li").eq(-a).css("opacity","1").siblings().css("opacity","0.4")
 }
 // 页面加载时执行
-window.onload=function banner1(){
-    setTimeout(function(){
-        var bleft=Math.ceil(parseInt($(".b-box ul").css("left"))/1200)
-        // console.log(bleft)
-        banner2(bleft)
-        banner1()
-    },3000)
+window.onload=function(){
+    //根据活动的圆点下标来改变颜色
+    setInterval(function(){
+    var bannerNum=$(".swiper-pagination-bullet-active").index()
+      beijing(bannerNum);
+    },500)
 }
-// 小圆点事件
-function circle(){
-    var bindex=$(this).index()
-    banner2(bindex)
-}
-//事件委托给div
-$(".b-circle").on("click","li",circle)
-
+// 点击圆点背景改变
+$(".swiper-pagination-bullet").click(function(){
+    beijing($(this).index())
+})
 // 左右箭头
-$(".b-box").on({
+$(".next").click(function(){
+    beijing($(".swiper-pagination-bullet-active").index())
+})
+$(".prev").click(function(){
+    beijing($(".swiper-pagination-bullet-active").index())
+})
+
+
+// 创建左侧导航栏的效果
+function left(){
+    // 获取scrollY的值
+    numY=window.scrollY
+    // 判断显示与隐藏
+    if(numY>=1500){
+        $(".left-list").show()
+        // 随着位置改变其颜色
+        if(numY>1500 &&numY<2100){
+            $(".left-one").css("background-color","#ff9244")
+        }else{
+            $(".left-one").css("background-color","#fff")
+        }
+        if(numY>2100 &&numY<2850){
+            $(".left-two").css("background-color","#ff6060")
+        }else{
+            $(".left-two").css("background-color","#fff")
+        }
+        if(numY>2850 &&numY<3500){
+            $(".left-three").css("background-color","#ff9244")
+        }else{
+            $(".left-three").css("background-color","#fff")
+        }
+        if(numY>3500 &&numY<4200){
+            $(".left-four").css("background-color","#90cb55")
+        }else{
+            $(".left-four").css("background-color","#fff")
+        }
+        if(numY>4200 &&numY<4900){
+            $(".left-five").css("background-color","#5a87eb")
+        }else{
+            $(".left-five").css("background-color","#fff")
+        }
+        if(numY>4900){
+            $(".left-six").css("background-color","#ff9244")
+        }else{
+            $(".left-six").css("background-color","#fff")
+        }
+    }else{
+        $(".left-list").hide()
+    }
+}
+// 左侧边栏滚动调用方法
+window.onscroll=function (){
+    left()
+}
+// 鼠标进入改变其颜色
+$(".left-one").on({
     mouseenter:function(){
-        $(".b-box span").show()
+        $(this).css("background","#ff9244")
     },
     mouseleave:function(){
-        $(".b-box span").hide()
+        $(this).css("background","#fff")
+        // 离开时调用函数，防止其背景改变状态
+        left()
     }
 })
-$(".b-left").on("click",function(){
-    var bleft1=Math.ceil(parseInt($(".b-box ul").css("left"))/-1200)
-    console.log(bleft1)
+$(".left-two").on({
+    mouseenter:function(){
+        $(this).css("background","#ff6060")
+    },
+    mouseleave:function(){
+        $(this).css("background","#fff")
+        left()
+    }
 })
-$(".b-right").on("click",function(){
-    var bright1=Math.ceil(parseInt($(".b-box ul").css("left"))/1200)
-    console.log(bright1)
-    // banner2(bright1)
+$(".left-three").on({
+    mouseenter:function(){
+        $(this).css("background","#ff9244")
+    },
+    mouseleave:function(){
+        $(this).css("background","#fff")
+        left()
+    }
 })
-
-// 欢聚橙卡
+$(".left-four").on({
+    mouseenter:function(){
+        $(this).css("background","#90cb55")
+    },
+    mouseleave:function(){
+        $(this).css("background","#fff")
+        left()
+    }
+})
+$(".left-five").on({
+    mouseenter:function(){
+        $(this).css("background","#5ab7e8")
+    },
+    mouseleave:function(){
+        $(this).css("background","#fff")
+        left()
+    }
+})
+$(".left-six").on({
+    mouseenter:function(){
+        $(this).css("background","#ff9244")
+    },
+    mouseleave:function(){
+        $(this).css("background","#fff")
+        left()
+    }
+})
 

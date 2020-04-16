@@ -305,7 +305,7 @@ i{
     padding: 18px 0;
     position: absolute;
     left: 0;
-    top: 45px;
+    top: 46px;
     background-color: #FAFAFA;
     z-index: 10;
 }
@@ -433,76 +433,48 @@ i{
 .banner{
     width: 100%;
     height: 400px;
-    background-color: #ff7919;
+    background-color: #55b5db;
 }
-.banner .b-box{
-    width: 1200px;
-    overflow: hidden;
-    position: relative;
-}
-.banner .b-box>ul{
-    width: 12000px;
-    height: 400px;
-    position: relative;
-    left: -1200px;
-    transition: all .8s;
-}
-.banner .b-box>ul li{
-    width: 1200px;
-    height: 400px;
-    float: left;
-}
-.banner .b-box ul li a{
-    display: block;
+/*  */
+.swiper-container{
     width: 1200px;
     height: 400px;
 }
-.banner .b-box ul li img{
-    width: 1200px;
-    height: 400px;
+
+.banner .swiper-container-horizontal>.swiper-pagination-bullets{
+    left: 70%;
+    width: 300px;
 }
-/* 小圆点 */
-.banner .b-box  .b-circle{
-    width: 270px;
-    height: 17px;
-    position: absolute;
-    bottom: 30px;
-    right: 100px;
-    padding-top: 3px;
-}
- .b-circle ul li{
+
+.banner  .swiper-pagination-bullet{
     width: 10px;
     height: 10px;
-    border-radius:10px ;
-    background-color:#fff;
-    opacity: 0.4;
-    float: left;
-    margin: 0 10px;
-    cursor: pointer;
 }
-.b-circle ul li:first-child{
-    opacity: 1;
+.banner  .swiper-pagination-bullet-active{
+    background: white;
 }
-/* 左右箭头 */
-.b-box span{
+.banner .swiper-button-prev{
     width: 42px;
     height: 70px;
     background: url(../img/icons_03.png);
-    display: block;
-    position: absolute;
-    top: 50%;
-    display: none;
-    cursor: pointer;
-}
-.b-box .b-left{
-    left: 200px;
     background-position: -88px -48px;
+    display: none;
 }
-.b-box .b-right{
-    right: 20px;
+.banner .swiper-container:hover .prev{
+    display: block;
+    left: 190px;
+}
+.banner .swiper-container:hover .next{
+    display: block;
+}
+.banner .swiper-button-next{
+    width: 42px;
+    height: 70px;
+    background: url(../img/icons_03.png);
     background-position: -150px -48px;
+    display: none;
 }
-
+/* banner结束 */
 
 /* 欢聚橙卡 */
 .index-list{
@@ -1236,4 +1208,172 @@ height: 389px;
 }
 .fb-four>a:last-child{
     background-position: -182px -133px;
+}
+/* 底部结束 */
+
+/* 右侧边栏 */
+.right-nav{
+    position: fixed;
+    right: 20px;
+    bottom: 20%;
+    z-index: 10;
+}
+.right-nav>a{
+    display: block;
+    margin-top: -1px;
+    border: 1px solid #ebebeb;
+    width: 55px;
+    height: 55px;
+    font-size: 12px;
+}
+.right-nav>a>span{
+    display: block;
+    margin: 0 auto;
+    width: 53px;
+    height: 53px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #999;
+    background: #fff;
+}
+.right-nav .kefu{
+    background:#fff url(../img/kefu-d.png) center 10px no-repeat;
+}
+.right-nav>a:first-child:hover .kefu{
+    background:#ff9244 url(../img/kefu-d.png) center -40px no-repeat;
+}
+.right-nav>a>div{
+    position: absolute;
+    right: 53px;
+    top: 0;
+    width: 0px;
+    height: 53px;
+    line-height: 50px;
+    text-align: right;
+    background: url(../img/sidebar1-d.png) 0 0 no-repeat;
+    transition: .2s ease width;
+}
+.right-nav>a:first-child:hover .kefu1{
+    width: 147px;
+    background-position: -58px -213px;
+}
+.right-nav .app{
+    width: 53px;
+    height: 53px;
+    background-image: url(../img/r1.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-color: white;
+    background-position: center;
+}
+
+.right-nav>a:nth-child(2):hover .app1{
+    width: 147px;
+    height: 147px;
+    top: 5px;
+    background: url(../img/app-d.png) no-repeat;
+}
+.right-nav>a:nth-child(3):hover .weixin{
+    color: white;
+    background-color: #ff9244;
+}
+
+.right-nav>a:nth-child(3):hover .weixin1{
+    top: 60px;
+    width: 147px;
+    height: 147px;
+    background-position: -66px -8px;
+}
+.right-nav>a:nth-child(4):hover .dianhua{
+    color: white;
+    background-color: #ff9244;
+}
+.right-nav>a:nth-child(4):hover .dianhua1{
+    top: 162px;
+    width: 210px;
+    background-position:0 -156px ;
+}
+.right-nav>:last-child:hover .dingbu{
+    color: white;
+    background-color: #ff9244;
+}
+.right-nav>:last-child:hover .dingbu1{
+    top: 216px;
+    width: 166px;
+    background-position:-43px -268px;
+}
+/* 右侧边栏结束 */
+/* 左侧边栏开始 */
+.left-list{
+    position: fixed;
+    left: 0;
+    bottom:20%;
+    z-index: 10;
+    display: none;
+}
+
+.left-list li{
+    width: 55px;
+    height: 54px;
+    padding: 1px;
+    background: #ebebeb;
+    position: relative;
+}
+.left-list li:last-child{
+    border-bottom:1px solid #ebebeb;
+}
+ .left-list a>span{
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #c2c2c2;
+    background: #fff;
+} 
+.left-list a>span:last-child{
+    width: 53px;
+    height: 53px;
+    color: #fff;
+    line-height: 50px;
+    vertical-align: top;
+    padding-left: 1px;
+    font-size: 14px;
+    position: absolute;
+    top: 1px;
+    right: -52px;
+    background-color: #ff9244;
+    display: none;
+    
+} 
+.left-list li:first-child:hover .ych{
+    display: block;
+}
+.left-list li:nth-child(2) span:last-child{
+    background-color: #ff6060;
+}
+.left-list li:nth-child(2):hover .yyj{
+    display: block;
+}
+.left-list li:nth-child(3):hover .wtj{
+    display: block;
+}
+.left-list li:nth-child(4) span:last-child{
+    background-color: #90cb55;
+}
+.left-list li:nth-child(4):hover .etj{
+    display: block;
+}
+
+.left-list li:nth-child(5) span:last-child{
+    background-color: #5ab7e8;
+}
+.left-list li:nth-child(5):hover .yyh{
+    display: block;
+}
+.left-list li:nth-child(6):hover .zl{
+    display: block;
+    font-size: 12px;
 }

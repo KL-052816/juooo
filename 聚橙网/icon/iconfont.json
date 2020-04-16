@@ -1,0 +1,72 @@
+{
+  "id": "1758864",
+  "name": "juooo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "94673",
+      "name": "话筒",
+      "font_class": "huatong",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "2134995",
+      "name": "大提琴",
+      "font_class": "datiqin",
+      "unicode": "a1a1",
+      "unicode_decimal": 41377
+    },
+    {
+      "icon_id": "4735338",
+      "name": "icon_笑脸-线",
+      "font_class": "icon_xiaolian-xian",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "5217275",
+      "name": "钢琴",
+      "font_class": "guigetubiao-",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "8767299",
+      "name": "照片",
+      "font_class": "zhaopian",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "12849761",
+      "name": "木马",
+      "font_class": "-muma",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "6263347",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "7372644",
+      "name": "顶部",
+      "font_class": "dingbu",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "880414",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    }
+  ]
+}
