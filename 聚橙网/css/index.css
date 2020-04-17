@@ -483,10 +483,18 @@ i{
     margin:25px 0;
 }
 .index-list>.heart>a{
-    display: inline-block;
+    display: block;
+    float: left;
     width: 190px;
     height: 80px;
     padding-left: 14px;
+    border: 1px solid #ebebeb;
+    background:#fcfcfc;
+    margin-left: 12px;
+    box-sizing: border-box;
+}
+.index-list>.heart>a:first-child{
+    margin: 0;
 }
 .index-bg{
     background: url(../img/list-1.png) no-repeat;
