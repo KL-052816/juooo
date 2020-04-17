@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list">
+        <ul></ul>
+    </div>
+
+    <script>
+        var ul=document.getElementsByTagName("ul")[0];
+
+        var xhr=new XMLHttpRequest();
+
+        xhr.onreadystatechange=function() {
+            if(xhr.readyState===4 && xhr.status===200) {
+                var movies=JSON.parse(xhr.responseText);
+                console.log(movies);
+                for(var i=0; i<movies.length; i++) {
+                    ul.innerHTML+=`
+                        <li>
+                            <p>电影名字为：${movies[i].name}</p>
+                            <span>电影价格为：${movies[i].price}</span>
+                        </li>
+                    `
+                }
+               
+            }
+        }
+        xhr.open('GET','http://localhost/juchengwang/infro_content.php', true);
+        /*
+            open(method, url, async)  
+            method 请求类型 GET或者POST
+            url 文件在后台服务器上边的位置
+            async  true 异步   false 同步
+
+            什么时候用post或者get
+                get更简单更快捷  并且在大部分情况下都可以使用  一般使用get请求
+            什么时候使用post
+                更新服务器上边文件或者数据库
+                向服务器发送大量数据时
+                发送未知的用户输入时， post比get更加安全可靠
+
+        
+
+            send(string) 将请求发送到服务器  string仅限于post请求
+        */
+        xhr.send();
+        
+    </script>
+</body>
+</html>
