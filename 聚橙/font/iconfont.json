@@ -1,0 +1,65 @@
+{
+  "id": "1745067",
+  "name": "1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1092108",
+      "name": "安卓",
+      "font_class": "anzhuo",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "350628",
+      "name": "GRID",
+      "font_class": "grid",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "647469",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "1309077",
+      "name": "Top",
+      "font_class": "21zhiding",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "4341705",
+      "name": "left",
+      "font_class": "left-",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "9668380",
+      "name": "weixin",
+      "font_class": "weixin",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "11770085",
+      "name": "Phone",
+      "font_class": "Phone",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "13895995",
+      "name": "list",
+      "font_class": "list",
+      "unicode": "e77a",
+      "unicode_decimal": 59258
+    }
+  ]
+}
