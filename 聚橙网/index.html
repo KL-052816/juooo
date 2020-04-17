@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聚橙网</title>
+    <!-- 清除默认样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!-- 引入js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#left-list" data-offset="300">
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="header-top">
+            <div class="heart">
+                <div class="left">汇聚每一个感动</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href=""><i></i>手机购票</a>
+                            <div class="mobile">
+                            <img src="img/mobile.png" alt="">
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="heart">
+                <div class="header-bottom-top">
+                    <!-- logo -->
+                    <div class="logo"><a href=""></a></div>
+                    <!-- 全国 -->
+                    <div>
+                        <div class="all">
+                            <span>全国</span>
+                            <i></i>
+                            <!-- 隐藏块 -->
+                            <div id="a-display">
+                                <div class="a-title">
+                                    <span>全国</span>
+                                    <i></i>
+                                    <p>当前全国共有<span>1102</span>场演出，城市后数字代表演出场次</p>
+                                    <i class="a-close"></i>
+                                </div>
+                                <div>
+                                    <!-- 地区列表 -->
+                                    <ul>
+                                    <li>
+                                        <span>全    国</span>
+                                        <div>
+                                            <a href="">全国<span>(1102)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华南地区</span>
+                                        <div>
+                                            <a href="">深圳<span>(212)</span></a>
+                                            <a href="">广州<span>(1102)</span></a>
+                                            <a href="">香港<span>(1102)</span></a>
+                                            <a href="">佛山<span>(1102)</span></a>
+                                            <a href="">澳门<span>(1102)</span></a>
+                                            <a href="">福州<span>(1102)</span></a>
+                                            <a href="">泉州<span>(1102)</span></a>
+                                            <a href="">厦门<span>(1102)</span></a>
+                                            <a href="">台北<span>(1102)</span></a>
+                                            <a href="">福建<span>(1102)</span></a>
+                                            <a href="">陵水<span>(1102)</span></a>
+                                            <a href="">桂林<span>(1102)</span></a>
+                                            <a href="">郴州<span>(1102)</span></a>
+                                            <a href="">钦州<span>(1102)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华东地区</span>
+                                        <div>
+                                            <a href="">上海<span>(262)</span></a>
+                                            <a href="">杭州<span>(75)</span></a>
+                                            <a href="">苏州<span>(6)</span></a>
+                                            <a href="">宁波<span>(19)</span></a>
+                                            <a href="">南京<span>(11)</span></a>
+                                            <a href="">合肥<span>(12)</span></a>
+                                            <a href="">济南<span>(19)</span></a>
+                                            <a href="">无锡<span>(18)</span></a>
+                                            <a href="">常州<span>(1)</span></a>
+                                            <a href="">舟山<span>(7)</span></a>
+                                            <a href="">绍兴<span>(0)</span></a>
+                                            <a href="">金华<span>(1)</span></a>
+                                            <a href="">赣州<span>(0)</span></a>
+                                            <a href="">德州<span>(0)</span></a>
+                                            <a href="">南平<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华北地区</span>
+                                        <div>
+                                            <a href="">北京<span>(66)</span></a>
+                                            <a href="">石家庄<span>(46)</span></a>
+                                            <a href="">天津<span>(9)</span></a>
+                                            <a href="">太原<span>(1)</span></a>
+                                            <a href="">廊坊<span>(20)</span></a>
+                                            <a href="">兴安盟<span>(12)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>西南地区</span>
+                                        <div>
+                                            <a href="">成都<span>(36)</span></a>
+                                            <a href="">重庆<span>(28)</span></a>
+                                            <a href="">昆明<span>(0)</span></a>
+                                            <a href="">贵阳<span>(20)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华中地区</span>
+                                        <div>
+                                            <a href="">长沙<span>(5)</span></a>
+                                            <a href="">武汉<span>(15)</span></a>
+                                            <a href="">岳阳<span>(0)</span></a>
+                                            <a href="">郑州<span>(13)</span></a>
+                                            <a href="">宜昌<span>(21)</span></a>
+                                            <a href="">随州<span>(0)</span></a>
+                                            <a href="">信阳<span>(0)</span></a>
+                                            <a href="">咸宁<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>东北地区</span>
+                                        <div>
+                                            <a href="">大庆<span>(0)</span></a>
+                                            <a href="">沈阳<span>(6)</span></a>
+                                            <a href="">哈尔滨<span>(7)</span></a>
+                                            <a href="">长春<span>(0)</span></a>
+                                            <a href="">营口<span>(0)</span></a>
+                                            <a href="">吉林<span>(0)</span></a>
+                                            <a href="">抚顺<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>西北地区</span>
+                                        <div>
+                                            <a href="">西安<span>(11)</span></a>
+                                            <a href="">西宁<span>(0)</span></a>
+                                            <a href="">昌吉<span>(0)</span></a>
+                                            <a href="">延安<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>海外地区</span>
+                                        <div>
+                                            <a href="">新加坡<span>(1)</span></a>
+                                            <a href="">马来西亚<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="all-bottom">
+                            <a href="">
+                                <i></i>
+                                推荐全国站
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 搜索 -->
+                    <div class="search">
+                        <div class="s-input">
+                            <input type="text" placeholder="冰雪奇缘">
+                            <div id="s-btn"><i></i></div>
+                        </div>
+                        <div class="s-list">
+                            <ul>
+                                <li><a href="">冰雪奇缘</a></li>
+                                <li><a href="">第一次约会</a></li>
+                                <li><a href="">摇滚红与黑</a></li>
+                                <li><a href="">魔女宅急便</a></li>
+                                <li><a href="">咖啡因</a></li>
+                                <li><a href="">猫CATS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 头部导航 -->
+                <div class="header-bottom-bottom">
+                    <div><a href="index.html">全部商品分类</a></div>
+                    <ul class="nav-list">
+                        <li><a href="">流行音乐</a></li>
+                        <li><a href="">古典音乐</a></li>
+                        <li><a href="">舞台剧</a></li>
+                        <li><a href="">儿童亲子</a></li>
+                        <li><a href="">音乐剧</a></li>
+                        <li><a href="">VIP+专区</a></li>
+                    </ul>
+                    <!-- 欢聚橙卡 -->
+                    <div class="nav-right">
+                        <a href="">
+                            <img src="img/huanjuchengka.gif" alt="">
+                        </a>
+                    </div>
+                    <!-- 左侧导航 -->
+                    <div class="nav-left">
+                        <a href=""><i class="nlbg1"></i><span>演唱会</span><i class="nlbg2"></i></a>
+                        <a href=""><i class="nlbg1"></i><span>音乐会</span><i class="nlbg2"></i></a>
+                        <a href=""><i class="nlbg1"></i><span>话剧歌剧</span><i class="nlbg2"></i></a>
+                        <a href=""><i class="nlbg1"></i><span>儿童亲子</span><i class="nlbg2"></i></a>
+                        <a href=""><i class="nlbg1"></i><span>音乐剧</span><i class="nlbg2"></i></a>
+                        <a href=""><i class="nlbg1"></i><span>戏曲综艺</span><i class="nlbg2"></i></a>
+                        <a href=""><i class="nlbg1"></i><span>展览</span><i class="nlbg2"></i></a>
+                        <!-- 左侧导航隐藏块 -->
+                        <div class="nl-none">
+                            <ul>
+                                <li>
+                                    <div class="nln-l">
+                                        <a href="">流行</a>
+                                        <a href="">摇滚</a>
+                                        <a href="">民谣</a>
+                                        <a href="">民族</a>
+                                        <a href="">其他</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nln-l">
+                                        <a href="">交响</a>
+                                        <a href="">独奏</a>
+                                        <a href="">其他</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nln-l">
+                                        <a href="">话剧</a>
+                                        <a href="">歌剧</a>
+                                        <a href="">歌舞剧</a>
+                                        <a href="">其他</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nln-l">
+                                        <a href="">儿童剧</a>
+                                        <a href="">亲子活动</a>
+                                        <a href="">其他</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nln-l">
+                                        <a href="">音乐剧</a>
+                                        <a href="">其他</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nln-l">
+                                        <a href="">京剧</a>
+                                        <a href="">昆曲</a>
+                                        <a href="">越剧</a>
+                                        <a href="">相声小品</a>
+                                        <a href="">综艺</a>
+                                        <a href="">马戏杂耍</a>
+                                        
+                                    </div>
+                                    <div class="nln-r">
+                                        <a href="">其他</a>
+                                        <a href="">演讲</a>
+                                        <a href="">体育</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nln-l">
+                                        <a href="">展览</a>
+                                        <a href="">其他</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index-top.js"></script>
+    <!-- 头部结束 -->
+    <!-- banner开始 -->
+    <div class="banner">
+        <div class="heart">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/banner1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner8.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner9.jpg" alt=""></div>
+                    </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev prev"></div>
+                <div class="swiper-button-next next"></div>
+            </div>
+        </div>
+    </div>
+    <!-- swiper轮播插件 -->
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+        //   direction: 'vertical',
+          loop: true,
+        // 自动播放
+        autoplay:3000,
+        autoplayDisableOnInteraction : false,
+        speed:1000,
+          // 如果需要分页器
+          pagination: '.swiper-pagination',
+          paginationClickable :true,
+          // 如果需要前进后退按钮
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+        })        
+    </script>
+    <!-- 欢聚橙卡 -->
+    <div class="index-list">
+        <div class="heart">
+            <a href="">
+                <div class="index-bg"></div>
+                <div class="index-text">
+                    <p>欢聚橙卡</p>
+                    <span>33元起看演出</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-bg index-bg2"></div>
+                <div class="index-text">
+                    <p>VIP+专区</p>
+                    <span>尊享十大权益</span>
+                    <span class="hot"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-bg index-bg3"></div>
+                <div class="index-text">
+                    <p>橙PLUS卡</p>
+                    <span>限时送100元</span>
+                    <span class="hot"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-bg index-bg4"></div>
+                <div class="index-text">
+                    <p>积分商城</p>
+                    <span>用积分，享0元购票</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-bg index-bg5"></div>
+                <div class="index-text">
+                    <p>精彩专题</p>
+                    <span>演出专题，精彩汇聚</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="index-bg index-bg6"></div>
+                <div class="index-text">
+                    <p>演出日历</p>
+                    <span>演出信息，一目了然</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- 全国 -->
+    <div class="all-country">
+        <div class="heart">
+            <!-- 左边 -->
+            <div class="all-left">
+                <!-- 左标题 -->
+                <div class="all-title">
+                    <div class="a-t-left">全国</div>
+                    <div class="a-t-right">[其他城市]
+                        <!-- 隐藏城市列表 -->
+                        <div class="city-none">
+                            <div></div>
+                            <div class="cn-list">
+                                <p>热门城市:</p>
+                                <ul class="cn-hot">
+                                    <li><a href="" class="cn">全国</a></li>
+                                    <li><a href=""class="cn">深圳</a></li>
+                                    <li><a href=""class="cn">广州</a></li>
+                                    <li><a href=""class="cn">北京</a></li>
+                                    <li><a href=""class="cn">上海</a></li>
+                                    <li><a href=""class="cn">成都</a></li>
+                                    <li><a href=""class="cn">重庆</a></li>
+                                    <li><a href=""class="cn">石家庄</a></li>
+                                    <li><a href=""class="cn">武汉</a></li>
+                                    <li><a href=""class="cn">杭州</a></li>
+                                </ul>
+                                <ul class="cn-city">
+                                    <li><a href="">金华<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">南京<span class="cncity">(11)</span></a></li>
+                                    <li><a href="">长沙<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">无锡<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">陵水<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">廊坊<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">合肥<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">苏州<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">泉州<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">南昌<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">佛山<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">南通<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">宁波<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">青岛<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">天津<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">西安<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">郑州<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">太原<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">福州<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">厦门<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">沈阳<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">济南<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">贵阳<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">常州<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">哈尔滨<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">温州<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">柳州<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">宜昌<span class="cncity">(19)</span></a></li>
+                                    <li><a href="">舟山<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">兴安盟<span class="cncity">(1)</span></a></li>
+                                    <li><a href="">新加坡<span class="cncity">(1)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 左内容列表 -->
+                <div class="all-con">
+                    <ul>
+                        <li>
+                            <div class="a-c-img">
+                                <a href="">
+                                    <i></i>
+                                    <img src="./img/all1.jpg" alt="">
+                                </a>
+                                <div class="a-c-imgnone">
+                                    <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                    <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                                </div>
+                            </div>
+                            <div class="a-c-title">
+                                <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                            </div>
+                            <div class="a-c-price">
+                                <div>音乐剧</div>
+                                <div class="a-c-pright">
+                                    <span>￥</span>
+                                    <span class="ac-price">199</span>
+                                    起
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a-c-img">
+                                <a href="">
+                                    <i></i>
+                                    <img src="./img/all1.jpg" alt="">
+                                </a>
+                                <div class="a-c-imgnone">
+                                    <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                    <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                                </div>
+                            </div>
+                            <div class="a-c-title">
+                                <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                            </div>
+                            <div class="a-c-price">
+                                <div>音乐剧</div>
+                                <div class="a-c-pright">
+                                    <span>￥</span>
+                                    <span class="ac-price">199</span>
+                                    起
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a-c-img">
+                                <a href="">
+                                    <i></i>
+                                    <img src="./img/all1.jpg" alt="">
+                                </a>
+                                <div class="a-c-imgnone">
+                                    <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                    <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                                </div>
+                            </div>
+                            <div class="a-c-title">
+                                <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                            </div>
+                            <div class="a-c-price">
+                                <div>音乐剧</div>
+                                <div class="a-c-pright">
+                                    <span>￥</span>
+                                    <span class="ac-price">199</span>
+                                    起
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="a-c-img">
+                                <a href="">
+                                    <i></i>
+                                    <img src="./img/all1.jpg" alt="">
+                                </a>
+                                <div class="a-c-imgnone">
+                                    <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                    <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                                </div>
+                            </div>
+                            <div class="a-c-title">
+                                <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                            </div>
+                            <div class="a-c-price">
+                                <div>音乐剧</div>
+                                <div class="a-c-pright">
+                                    <span>￥</span>
+                                    <span class="ac-price">199</span>
+                                    起
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右边 -->
+            <div class="all-right">
+                <!-- 右侧标题 -->
+                <div class="all-title">
+                    <div class="a-t-left">专题推荐</div>
+                    <a href=""></a>
+                </div>
+                <!-- 右侧内容 -->
+                <div class="ar-con">
+                    <div class="ar-vip">
+                        <a href="">
+                            <img src="./img/vip-d.png" alt="">
+                        </a>
+                    </div>
+                    <div class="ar-text">
+                        <a href="">VIP+会员，尊享10大权益</a>
+                    </div>
+                    <div class="ar-list">
+                        <ul>
+                            <li>
+                                <a href="">冰雪奇缘</a>
+                            </li>
+                            <li>
+                                <a href="">第一次约会</a>
+                            </li>
+                            <li>
+                                <a href="">摇滚红与黑</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 巡回演出 -->
+    <div class="tour" >
+        <div class="heart">
+            <div class="tour-h">
+                <h2>巡回演出</h2>
+            </div>
+            <div class="tour-list">
+                <ul>
+                    <li class="tour1">
+                        <div>
+                            <img src="./img/tour1-d.jpg" alt="">
+                            <a href="" class="a1">
+                                <h4>百老汇摇滚音乐剧《吉屋出租RENT》中文版</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="tour2">
+                        <div>
+                            <img src="./img/tour2-d.jpg" alt="">
+                            <a href="" class="a2">
+                                <h4>聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="tour3">
+                        <div>
+                            <img src="./img/tour3-d.jpg" alt="">
+                            <a href="" class="a3">
+                                <h4>聚橙制作 | 法语音乐剧《摇滚红与黑》</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="tour4">
+                        <div>
+                            <img src="./img/tour4-d.jpg" alt="">
+                            <a href="" class="a4">
+                                <h4>3D科幻舞台剧《三体Ⅱ黑暗森林》</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="tour5">
+                        <div>
+                            <img src="./img/tour5-d.jpg" alt="">
+                            <a href="" class="a5">
+                                <h4>2020年杨丽萍大型舞剧《平潭映象》</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="tour6">
+                        <div>
+                            <img src="./img/tour6-d.jpg" alt="">
+                            <a href="" class="a6">
+                                <h4>世界经典原版音乐剧《猫》CATS</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="tour7">
+                        <div>
+                            <img src="./img/tour7-d.jpg" alt="">
+                            <a href="" class="a7">
+                                <h4>聚橙出品 |百老汇现象级原版音乐剧《来自远方》</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="tour8">
+                        <div>
+                            <img src="./img/tour8-d.jpg" alt="">
+                            <a href="" class="a8">
+                                <h4>外百老汇怦然心动恋爱音乐剧《长腿叔叔》</h4>
+                                <p>共<B>7</B>场</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 演唱会 -->
+    <div class="sing" id="one">
+        <div class="heart">
+            <!-- 标题 -->
+            <div class="s-title">
+                <h2 class="h2title">演唱会</h2>
+                <div class="s-singer">
+                    <a href="">林子祥</a>
+                    <a href="">顾心怡</a>
+                    <a href="">吴青峰</a>
+                    <a href="">小野丽莎</a>
+                    <a href="">任贤齐</a>
+                    <a href="">周传雄</a>
+                </div>
+            </div>
+            <!-- 推荐 -->
+            <div class="s-con">
+                <ul>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <i></i>
+                                <img src="./img/sing1-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <img src="./img/sing2-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 音乐剧 -->
+    <div class="music" id="two">
+        <div class="heart">
+            <!-- 标题 -->
+            <div class="m-title tit">
+                <h2 class="h2title">音乐剧</h2>
+                <div class="s-singer">
+                    <a href="">魔女宅急便</a>
+                    <a href="">猫CATS</a>
+                    <a href="">第一次约会</a>
+                    <a href="">吉屋出租RENT</a>
+                    <a href="">摇滚红与黑</a>
+                </div>
+            </div>
+            <!-- 推荐 -->
+            <div class="s-con">
+                <ul>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <i></i>
+                                <img src="./img/sing1-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone mousicbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <img src="./img/sing2-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone mousicbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 舞台剧 -->
+    <div class="stage" id="three">
+        <div class="heart">
+            <!-- 标题 -->
+            <div class="s-title tit">
+                <h2 class="h2title">舞台剧</h2>
+                <div class="s-singer">
+                    <a href="">三体Ⅱ黑暗森林</a>
+                    <a href="">涂红</a>
+                    <a href="">平潭映象</a>
+                    <a href="">伦敦生活</a>
+                    <a href="">男版天鹅湖</a>
+                    <a href="">苏东坡</a>
+                </div>
+            </div>
+            <!-- 推荐 -->
+            <div class="s-con">
+                <ul>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <i></i>
+                                <img src="./img/sing1-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <img src="./img/sing2-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 儿童剧 -->
+    <div class="children" id="four">
+        <div class="heart">
+            <!-- 标题 -->
+            <div class="s-title tit">
+                <h2 class="h2title">儿童剧</h2>
+                <div class="s-singer">
+                    <a href="">小猪佩奇</a>
+                    <a href="">手拉手艺术节</a>
+                    <a href="">冰雪奇缘2</a>
+                    <a href="">胡桃夹子</a>
+                    <a href="">丑小鸭</a>
+                    <a href="">绿野仙踪</a>
+                    <a href="">灰姑娘</a>
+                    <a href="">小红帽</a>
+                </div>
+            </div>
+            <!-- 推荐 -->
+            <div class="s-con">
+                <ul>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <i></i>
+                                <img src="./img/sing1-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone childrenbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <img src="./img/sing2-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone childrenbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 音乐会 -->
+    <div class="concert" id="five">
+        <div class="heart">
+            <!-- 标题 -->
+            <div class="s-title tit">
+                <h2 class="h2title">音乐会</h2>
+                <div class="s-singer">
+                    <a href="">一生所爱</a>
+                    <a href="">马克西姆</a>
+                    <a href="">意大利卢卡百合</a>
+                    <a href="">宫崎骏</a>
+                    <a href="">永恒旋律</a>
+                    <a href="">莫西干人</a>
+                    <a href="">意大利米兰交响乐</a>
+                    <a href="">李军</a>
+                </div>
+            </div>
+            <!-- 推荐 -->
+            <div class="s-con">
+                <ul>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <i></i>
+                                <img src="./img/sing1-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone concertbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <img src="./img/sing2-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone concertbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 展览休闲 -->
+    <div class="exhibition" id="six">
+        <div class="heart">
+            <!-- 标题 -->
+            <div class="exh-tit">
+                <h2 class="h2title">展览休闲</h2>
+               
+            </div>
+            <!-- 推荐 -->
+            <div class="s-con">
+                <ul>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <i></i>
+                                <img src="./img/sing1-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone concertbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a-c-img">
+                            <a href="">
+                                <img src="./img/sing2-d.jpg" alt="">
+                            </a>
+                            <div class="a-c-imgnone concertbg">
+                                <p><span class="acsp1"></span><a href="">别克·陕西大剧院-歌剧厅</a></p>
+                                <p><span class="acsp2"></span><a href="">2020.09.18 19:45</a></p>
+                            </div>
+                        </div>
+                        <div class="a-c-title">
+                            <a href="">聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站</a>
+                        </div>
+                        <div class="a-c-price">
+                            <div>音乐剧</div>
+                            <div class="a-c-pright">
+                                <span>￥</span>
+                                <span class="ac-price">199</span>
+                                起
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <!-- 上部 -->
+        <div class="f-white">
+            <div class="heart">
+                <div class="f-top">
+                    <ul>
+                        <li>
+                             <div>帮助中心</div>                       
+                             <ul class="help">
+                                 <li><a href="">新手指南</a></li>
+                                 <li><a href="">支付方式</a></li>
+                                 <li><a href="">售后服务</a></li>
+                                 <li><a href="">购票指南</a></li>
+                                 <li><a href="">配送方式</a></li>
+                             </ul>
+                        </li>
+                        <li>
+                            <div class="tel">400-185-8666</div>
+                            <div class="time">周一至周五： 08:30-20:00</div>
+                            <div class="time">周　　　末： 08:30-18:00</div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="ticket"><img src="./img/ticket-d.png" alt="">
+                                    <p>聚橙票务</p>
+                                </div>
+                                <div class="show">
+                                    <img src="./img/show-d.png" alt="">
+                                    <p>聚橙演艺</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 下部 -->
+        <div class="f-gray">
+            <div class="heart">
+                <div class="f-bottom">
+                    <div class="fb-one">
+                        <p>聚橙旗下子品牌：</p>
+                        <a href="">小橙堡</a>
+                        <a href="">万有音乐系</a>
+                        <a href="">聚橙音乐剧</a>
+                    </div>
+                    <div class="fb-two">
+                        <ul>
+                            <li><a href="">关于我们</a></li>
+                            <li><a href="">联系我们</a></li>
+                            <li><a href="">服务条款</a></li>
+                            <li><a href="">加入我们</a></li>
+                            <li><a href="">媒体报道</a></li>
+                            <li><a href="">合作伙伴</a></li>
+                            <li><a href="">友情链接</a></li>
+                            <li><a href="">网站地图</a></li>
+                        </ul>
+                    </div>
+                    <div class="fb-three">
+                        <span>Copyright 2007-2020 © 深圳市聚橙演艺联盟票务有限公司 | <a href="">粤ICP备17063893号-2</a></span>
+                        <span>粤公网安备 44030502000578号</span>
+                    </div>
+                    <div class="fb-four">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧边栏 -->
+    <div class="right-nav">
+        <a href="">
+            <span class="kefu"></span>
+            <div class="kefu1"></div>
+        </a>
+        <a href="">
+            <span class="app"></span>
+            <div class="app1"></div>
+        </a>
+        <a href="">
+            <span class="iconfont icon-weixin weixin"></span>
+            <div class="weixin1"></div>
+        </a>
+        <a href="">
+            <span class="iconfont icon-dianhua dianhua"></span>
+            <div class="dianhua1"></div>
+        </a>
+        <a href="">
+            <span class="iconfont icon-dingbu dingbu"></span>
+            <div class="dingbu1"></div>
+        </a>
+    </div>
+    <!-- 右侧结束 -->
+    <!-- 左侧边栏 -->
+    <div class="left-list">
+        <ul>
+            <li>
+                <a href="#one">
+                    <span class="iconfont icon-huatong left-one"></span>
+                    <span class="ych">演唱会</span>
+                </a>
+            </li>
+            <li>
+                <a href="#two">
+                    <span class="iconfont icon-datiqin left-two"></span>
+                    <span class="yyj">音乐剧</span>
+                </a>
+            </li>
+            <li>
+                <a href="#three">
+                    <span class="iconfont icon-icon_xiaolian-xian left-three"></span>
+                    <span class="wtj">舞台剧</span>
+                </a>
+            </li>
+            <li>
+                <a href="#four">
+                    <span class="iconfont icon--muma left-four"></span>
+                    <span class="etj">儿童剧</span>
+                </a>
+            </li>
+            <li>
+                <a href="#five">
+                    <span class="iconfont icon-guigetubiao- left-five"></span>
+                    <span class="yyh">音乐会</span>
+                </a>
+            </li>
+            <li>
+                <a href="#six">
+                    <span class="iconfont icon-zhaopian left-six"></span>
+                    <span class="zl">展览休闲</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
