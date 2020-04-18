@@ -58,7 +58,7 @@ $(".nl-none ul li").on({
 // 中间导航
    $(".con-text").on("click","a",function(){ 
        $(".c1").remove()
-       $(".con-all").removeClass("on")
+       $(".con-all5").removeClass("on")
         $(this).parent().children().removeClass("on")
         var c=`
         <p class="c1 ">${$(this).text()}
@@ -66,7 +66,7 @@ $(".nl-none ul li").on({
         `
         $(".co-last").append(c)
         $(this).addClass("on")
-        close()
+        close(1)
    })
    $(".con-ty").on("click","a",function(){
        $(".c2").remove()
@@ -78,7 +78,7 @@ $(".nl-none ul li").on({
        `
        $(".co-last").append(c)
        $(this).addClass("on")
-       close()
+       close(2)
    })
    $(".con-time").on("click","a",function(){
     $(".c3").remove()
@@ -90,13 +90,27 @@ $(".nl-none ul li").on({
     `
     $(".co-last").append(c)
     $(this).addClass("on")
-    close()
+    close(3)
 })
 // 已选条件删除
-function close(){
+function close(c){
     $(".close").on("click",function(){
-        $(this).parent().remove()
-        console.log($(this).parent())
+        $(this).parent().removeClass("on").addClass("hide")
+        console.log(c)
+        if(c==1){
+            window.event.returnValue=false
+            $(".con-all5").addClass("on")
+            $(".con-cities").children().removeClass("on")
+        }else if(c==2){
+            window.event.returnValue=false
+                $(".con-all1").addClass("on")
+                $(".con-ty").children().removeClass("on")
+        }else if(c==3) {
+            window.event.returnValue=false
+            $(".con-all2").addClass("on")
+            $(".con-time").children().removeClass("on")
+        }
+
     })
 }
 // 中间导航结束

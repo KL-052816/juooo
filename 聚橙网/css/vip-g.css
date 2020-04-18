@@ -41,7 +41,7 @@ body{
     width: 36px ;
     height: 57px;
     display: inline-block;
-    background: url("../img/pc_icons.png") -89px  -51px no-repeat;
+    background: url(../img/icons_03.png) -89px  -51px no-repeat;
     background-color: #4F412D;
     position: absolute;
     left: 45px;
@@ -130,7 +130,7 @@ body{
     width: 36px ;
     height: 57px;
     display: inline-block;
-    background: url("../img/pc_icons.png") -150px  -51px no-repeat;
+    background: url(../img/icons_03.png) -150px  -51px no-repeat;
     background-color: #4F412D;
     position: absolute;
     right:45px;
