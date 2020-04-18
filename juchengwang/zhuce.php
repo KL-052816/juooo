@@ -113,11 +113,11 @@ span{
   $password="123456";
   $mysql="user-value";
   $connect=new mysqli($servername,$name,$password,$mysql);
-//   if($connect->connect_error) { 
-//     die("数据库连接失败:".$connect->connect_error);
-// }
-// echo "数据库连接成功";
-// $admin=$password1="";
+  if($connect->connect_error) { 
+    die("数据库连接失败:".$connect->connect_error);
+}
+echo "数据库连接成功";
+$admin=$password1="";
 
 if($_SERVER["REQUEST_METHOD"]=="POST") {
   if(empty($_POST["admin"])) {

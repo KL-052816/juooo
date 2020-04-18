@@ -29,7 +29,7 @@ background-color: white;
     float: left;
     color: black;
     transform: scale(1.5);
-    margin-top: 15px;
+    margin-top: 19px;
 }
 
 .a2 {
@@ -41,7 +41,21 @@ background-color: white;
     transform: scale(2.5);
     margin-right: 10px;
 }
-
+.ul{
+    width: 160px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 47px;
+    right: 0;
+    font-size: 20px;
+    padding-top: 10px;
+   
+}
+.ul li{
+    margin-top: 14px;
+    margin-left: 16px;
+}
 .a1:hover {
     text-decoration: none;
 }
