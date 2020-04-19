@@ -58,6 +58,7 @@
     .form .message a {
       color: #4CAF50;
       text-decoration: none;
+      font-size: 17px;
     }
     .form .register-form {
       display: none;
@@ -165,7 +166,7 @@ $insert="insert into user (id,password) values ('$admin',' $password');";
           <input type="password" placeholder="密码" id="password" name="password"/>
           <span><?php echo $password1; ?></span>
           <button id="login">注册</button>
-     
+         
         </form>
       </div>
     </div>
