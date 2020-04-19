@@ -114,10 +114,10 @@ span{
   $password="123456";
   $mysql="user-value";
   $connect=new mysqli($servername,$name,$password,$mysql);
-  if($connect->connect_error) { 
-    die("数据库连接失败:".$connect->connect_error);
-}
-echo "数据库连接成功";
+//   if($connect->connect_error) { 
+//     die("数据库连接失败:".$connect->connect_error);
+// }
+// echo "数据库连接成功";
 if($_SERVER["REQUEST_METHOD"]=="POST") {
   if(empty($_POST["admin"])) {
       $admin1="*当前字段不能为空";
@@ -140,7 +140,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
         $password1="*密码长度不小于六位且为字母数字";
     }
    
-   
 };
 if(preg_match("/^[_a-zA-Z0-9]{1,}$/", $_POST["admin"])&&preg_match("/^[a-zA-Z0-9]{6,}$/", $_POST["password"])) {
   echo '<script language="JavaScript">;alert("注册成功");location.href="logn-z.html";</script>;';
@@ -150,11 +149,11 @@ $insert="insert into user (id,password) values ('$admin',' $password');";
 }
   };
 
-  if($connect->query($insert)===true) {
-      echo "数据插入成功";
-  }else {
-      echo "数据插入失败";
-  };
+  // if($connect->query($insert)===true) {
+  //     echo "数据插入成功";
+  // }else {
+  //     echo "数据插入失败";
+  // };
 ?>
 <div class="htmleaf-container">
     <div id="wrapper" class="login-page">
