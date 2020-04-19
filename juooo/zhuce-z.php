@@ -113,24 +113,20 @@ span{
   $password="123456";
   $mysql="user-value";
   $connect=new mysqli($servername,$name,$password,$mysql);
-//   if($connect->connect_error) { 
-//     die("数据库连接失败:".$connect->connect_error);
-// }
-// echo "数据库连接成功";
-<<<<<<< HEAD
-=======
-// $admin=$password1="";
-
->>>>>>> 63853d39107cf7659940b21c4234f5dde2852856
+  if($connect->connect_error) { 
+    die("数据库连接失败:".$connect->connect_error);
+}
+echo "数据库连接成功";
 if($_SERVER["REQUEST_METHOD"]=="POST") {
   if(empty($_POST["admin"])) {
-      $admin="*当前字段不能为空";
+      $admin1="*当前字段不能为空";
+    
   }else {
                
     if(preg_match("/^[_a-zA-Z0-9]{1,}$/", $_POST["admin"])) {
-        $admin="";
+        $admin1="";
     }else {
-        $admin="*用户名必须为数字字母下划线";
+        $admin1="*用户名必须为数字字母下划线";
     }
   };
   if(empty($_POST["password"])) {
@@ -142,21 +138,22 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
     }else {
         $password1="*密码长度不小于六位且为字母数字";
     }
-<<<<<<< HEAD
    
-=======
->>>>>>> 63853d39107cf7659940b21c4234f5dde2852856
+   
 };
+if(preg_match("/^[_a-zA-Z0-9]{1,}$/", $_POST["admin"])&&preg_match("/^[a-zA-Z0-9]{6,}$/", $_POST["password"])) {
+  echo '<script language="JavaScript">;alert("注册成功");location.href="logn-z.html";</script>;';
+  $admin= $_POST["admin"];
+$password= $_POST["password"];
+$insert="insert into user (id,password) values ('$admin',' $password');";
+}
   };
 
-<<<<<<< HEAD
-  // if($connect->query($insert)===true) {
-  //     echo "数据插入成功";
-  // }else {
-  //     echo "数据插入失败";
-  // };
-=======
->>>>>>> 63853d39107cf7659940b21c4234f5dde2852856
+  if($connect->query($insert)===true) {
+      echo "数据插入成功";
+  }else {
+      echo "数据插入失败";
+  };
 ?>
 <div class="htmleaf-container">
     <div id="wrapper" class="login-page">
@@ -164,23 +161,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
      
         <form class="login-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
           <input type="text" placeholder="用户名" id="user_name" name="admin"/>
-          <span><?php echo $admin; ?></span>
+          <span><?php echo $admin1; ?></span>
           <input type="password" placeholder="密码" id="password" name="password"/>
           <span><?php echo $password1; ?></span>
           <button id="login">注册</button>
-       
+        
         </form>
       </div>
     </div>
 </div>
-
-
 </body>
-<!-- <script>
-  $("#login").click(function(){
-    alert("祖册成功")
-  });
-
-</script> -->
 </html>
 
