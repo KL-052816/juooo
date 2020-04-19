@@ -137,7 +137,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
     if(preg_match("/^[a-zA-Z0-9]{6,}$/", $_POST["password"])) {
         $password1="";
     }else {
-        $password1="*密码长度不小于六位且为字母数字";
+        $password1="*密码长度不小于六位且为字母数字1111111111111";
     }
 };
   };
