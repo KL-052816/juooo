@@ -18,8 +18,19 @@ $(".w1204").on("click",".linb", (event)=>{
     $(event.tarage).addClass("active")
     
 })
-$(".pcity-city a").on("click",(event)=>{
-    $(".pcity-city a").removeClass("active-a")
-    console.log(1111,event.tarage)
-    $(event.tarage).addClass("active-a")
+$(".pcity-city").on("click",".pcity-city-a span", function(){
+    $(".pcity-city span").removeClass("active-a")
+    $(this).addClass("active-a")  
+})
+$(".pcity-city .pcity-city-a-last").mouseenter(function(){
+    $(".citys").show()
+})
+// $(".pcity-city .pcity-city-a-last").mouseleave(function(){
+//     $(".citys").hide()
+// })
+$(".citys").mouseenter(function(){
+    $(".citys").show()
+})
+$(".citys").mouseleave(function(){
+    $(".citys").hide()
 })
