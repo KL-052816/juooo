@@ -16,13 +16,16 @@ $connect=new mysqli($servername,$name,$password,$mysql);
 // };
 // echo "连接成功";
  //检索信息
- $content="select * from orange  limit  00000000001,20;";
+ $page=$_GET['page'];
+ $start=($page)*20;
+
+ $select="select * from orange  limit  {$start},20;";
 //  if($connect->query($content)){
 //      echo "成功";
 //  }else{
 //      echo "失败";
 //  };
-$txt=$connect->query($content);
+$txt=$connect->query($select);
 //print_r($txt);
     $a=[];
 if ($txt->num_rows>0){
