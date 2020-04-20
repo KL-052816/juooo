@@ -25,9 +25,6 @@ $(".pcity-city").on("click",".pcity-city-a span", function(){
 $(".pcity-city .pcity-city-a-last").mouseenter(function(){
     $(".citys").show()
 })
-// $(".pcity-city .pcity-city-a-last").mouseleave(function(){
-//     $(".citys").hide()
-// })
 $(".citys").mouseenter(function(){
     $(".citys").show()
 })

@@ -171,7 +171,7 @@
 /* 音乐剧模块 */
 .pcity{
     padding-top: 40px;
-    padding-bottom: 400px;
+    padding-bottom: 85px;
     position: relative;
     background: #FAFAFA;
 }
@@ -241,7 +241,7 @@
 /*内容模块*/
 .box{
     /* position: relative; */
-    padding: 30px 0px 400px 0px;
+    padding: 30px 0px 40px 0px;
 }
 .picture{
     width: 240px;
@@ -261,6 +261,11 @@
     position: relative;
     top:28px;
     left:15px;
+    width: 210px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .picture:hover{
     border: 1px solid #F96c02;
@@ -287,17 +292,24 @@
     font-size: 14px;
     color: #999999;
     position: relative;
-    top:35px;
+    top:46px;
     left:30px;
+    width: 120px;
+    display:inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* 更多 */
 .more{
     width: 100%;
     height: 48px;
     text-align: center;
-    margin-top:40px ;
     margin-left: 50%;
     transform: translateX(-50%);
+    clear:both;
+    position: relative;
+    top: 40px;
 }
 .more>a{
     display: inline-block;

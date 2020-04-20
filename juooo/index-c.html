@@ -364,7 +364,7 @@
         <div class="wrap pcity">
             <p class="recommend-p">舞台剧</p>
             <div class="pcity-city">
-                <a class="pcity-city-a"><span class="active-a"> 全部</span></a>
+                <a class="pcity-city-a"><span class="active-a">全部</span></a>
                 <a class="pcity-city-a"><span>深圳</span></a>
                 <a class="pcity-city-a"><span>广州</span></a>
                 <a class="pcity-city-a"><span>北京</span></a>
@@ -428,45 +428,62 @@
                     </li>
                 </ul>
             </div>
-            <div class="box wrap">
-                <div class="picture">
-                    <img src="img/1.4-z.jpg" alt="">
-                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
-                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
-                </div>
-                <div class="picture">
-                    <img src="img/1.4-z.jpg" alt="">
-                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
-                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
-                </div>
-                <div class="picture">
-                    <img src="img/1.4-z.jpg" alt="">
-                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
-                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
-                </div>
-                <div class="picture">
-                    <img src="img/1.4-z.jpg" alt="">
-                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
-                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
-                </div>
-                <div class="picture">
-                    <img src="img/1.4-z.jpg" alt="">
-                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
-                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
-                </div>
-                <div class="picture">
-                    <img src="img/1.4-z.jpg" alt="">
-                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
-                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
-                </div>
-                
-                
+            <div class="box wrap" id="box1"></div>
+            <div class="more " onclick="getNum1(city)">
+                <a>查看更多</a>
             </div>
-            <div class="more">
-                <a href="">查看更多</a>
-            </div>
-
+            <script>
+                getNum("全部")
+                var city="全部"
+                $(".pcity-city").on("click",".pcity-city-a span", function(){
+                    city=$(this).html()
+                    getNum(city) 
+                })
+                var cont=document.getElementById("box1")
+                function getNum(city){
+                    var xhr=new XMLHttpRequest();
+                    xhr.onreadystatechange=function() {
+                        if(xhr.readyState===4 && xhr.status===200) {
+                            var conts=JSON.parse(xhr.responseText); 
+                            cont.innerHTML=""
+                            for(var i=0; i<conts.length; i++) {
+                                cont.innerHTML+=`
+                                    <div class="picture">
+                                        <img src="${conts[i].photo}" alt="">
+                                        <p class="p1">${conts[i].city}${conts[i].name}</p>
+                                        <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
+                                        </div>
+                                    `
+                            }  
+                        }
+                    }
+                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city, true);
+                    xhr.send(); 
+                }              
+                var cont=document.getElementById("box1")
+                function getNum1(city){
+                var xhr=new XMLHttpRequest();
+                    xhr.onreadystatechange=function() {
+                        if(xhr.readyState===4 && xhr.status===200) {
+                            var conts=JSON.parse(xhr.responseText);
+                            console.log(conts);
+                                for(var i=0; i<conts.length; i++) {
+                                    cont.innerHTML+=`
+                                        <div class="picture">
+                                            <img src="${conts[i].photo}" alt="">
+                                            <p class="p1">${conts[i].city}${conts[i].name}</p>
+                                            <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
+                                        </div>
+                                    `
+                                }  
+                        }
+                    }
+                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city, true);
+                    xhr.send(); 
+            }
+            </script>
         </div>
+        
     </div>
     <div class="footer">
         <!-- 上部 -->
