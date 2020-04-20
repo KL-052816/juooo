@@ -66,7 +66,7 @@ $(".nl-none ul li").on({
         `
         $(".co-last").append(c)
         $(this).addClass("on")
-        close(1)
+        close()
    })
    $(".con-ty").on("click","a",function(){
        $(".c2").remove()
@@ -78,7 +78,7 @@ $(".nl-none ul li").on({
        `
        $(".co-last").append(c)
        $(this).addClass("on")
-       close(2)
+       close()
    })
    $(".con-time").on("click","a",function(){
     $(".c3").remove()
@@ -90,23 +90,25 @@ $(".nl-none ul li").on({
     `
     $(".co-last").append(c)
     $(this).addClass("on")
-    close(3)
+    close()
 })
 // 已选条件删除
-function close(c){
+function close(e){
     $(".close").on("click",function(){
         $(this).parent().removeClass("on").addClass("hide")
-        console.log(c)
-        if(c==1){
-            window.event.returnValue=false
+        console.log($(this).parent().hasClass("c1"))
+        if( $(this).parent().hasClass("c1")){
+            event.cancleBubble=true
             $(".con-all5").addClass("on")
             $(".con-cities").children().removeClass("on")
-        }else if(c==2){
-            window.event.returnValue=false
+        }
+        if($(this).parent().hasClass("c2")){
+            event.cancleBubble=true
                 $(".con-all1").addClass("on")
                 $(".con-ty").children().removeClass("on")
-        }else if(c==3) {
-            window.event.returnValue=false
+        }
+        if($(this).parent().hasClass("c3")) {
+           
             $(".con-all2").addClass("on")
             $(".con-time").children().removeClass("on")
         }
