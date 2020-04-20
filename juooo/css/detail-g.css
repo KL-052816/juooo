@@ -1,0 +1,135 @@
+body{
+    background-color: #F5F5F5;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.banner{
+    width: 100%;
+    height: 380px;
+    background-color: rgba(7, 6, 6, 0.7);
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+/* 头部 */
+.head{
+    width: 100%;
+    height: 335px;
+    background-color: #FFF;
+    position: relative;
+    top: 45px;
+    z-index: 3;
+    border-top-left-radius: 5px; ;
+    border-top-right-radius: 5px; ;
+}
+.he-le{
+    width: 670px;
+    height: 335px;
+    float: left;
+    border-bottom: 1px solid #ddd;
+     border-right: 1px solid #ddd;
+
+}
+.he-ri{
+    width: 530px;
+    height: 335px;
+    float: left;
+}
+.he-le-1{
+    width:670px ;
+    height: 280px;
+    padding:15px 25px ; 
+}
+.he-img{
+    width: 180px;
+    height: 245px;
+    float: left;
+}
+.he-img>img{
+    float: left;
+    width: 180px;
+    height: 245px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.he-text{
+    float: left;
+    width: 400px;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 22px;
+}
+.he-price{
+    box-sizing: content-box;
+    margin-top: 120px;
+    width: 400px;
+    height: 40px;
+}
+.he-ritop{
+    width: 530px;
+    height: 200px;
+    font-size: 20px;
+}
+.he-ritop div:nth-child(1){
+    width: 400px;
+    height: 155px;
+    padding-top: 50px;
+    margin-left: 20px;
+    float: left;
+}
+.he-ri-a>p:nth-child(2){
+       margin-top: 30px;
+}
+.he-ri-a>p:nth-child(3){
+    font-size: 15px;
+    color: #666;
+}
+.he-riimg{
+    float: left;
+    position: relative;
+    top: 120px;
+}
+.he-xuan{
+    margin-top: 67px;
+    width: 530px;
+    height: 68px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+.he-ding{
+    width: 490px;
+    height: 68px;
+    line-height: 68px;
+    margin: 0 20px;
+    border-top: 1px solid #ddd;
+}
+.he-ding>span>i{
+    color: #FF6743;
+    padding-left: 10px;
+}
+/* nav */
+.nav{
+    width: 1200px;
+    height: 75px;
+    border:1px solid #ddd ;
+    border-top:0 ;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.nav-le{
+    width: 640px;
+    height: 75px;
+    line-height: 75px;
+    margin-left: 30px;
+}
