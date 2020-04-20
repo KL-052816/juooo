@@ -18,7 +18,12 @@
             <a href="./index.html" class="a1 glyphicon glyphicon-menu-left " aria-hidden="true">
             </a>
             <p class="test">购买新卡<p>
-                    <a href="http://localhost/juchengwang/zhuce.php" class="a2">...</a>
+                <span class="a2 ">...</span>
+                   
+                <ul class="ul" style="display: none;">
+                    <li class="glyphicon glyphicon-home"> <a  href="index.html" >主页</a></li>
+                    <li class="glyphicon glyphicon-user "  aria-hidden="true"> <a  href="http://localhost/juooo/zhuce-z.php" >我的聚橙</a></li>
+                </ul>
    
             
         </div>
@@ -198,7 +203,7 @@
     </div>
     <div class="content17">
         <ul>
-            <li>购买辛苦</li>
+            <li>购买新卡</li>
             <li>绑定新卡</li>
             <li>我的卡包</li>
         </ul>
@@ -285,6 +290,10 @@ $(".warp .content4 .spn").click(function(){
         }
         $(function () {
   $('[data-toggle="popover"]').popover()
+})
+$(".a2").click(function(){
+    $(".ul").slideToggle()
+   
 })
 </script>
 </html>

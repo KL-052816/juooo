@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>jQuery实现登录注册表单代码 </title>
+<title> </title>
 
 <style type="text/css">
     .center{text-align: center;}
@@ -110,80 +112,75 @@
 <div class="htmleaf-container">
     <div id="wrapper" class="login-page">
       <div id="login_form" class="form">
-        <form class="register-form">
-          <input type="text" placeholder="用户名" id="r_user_name"/>
-          <input type="password" placeholder="密码" id="r_password" />
-          <input type="text" placeholder="电子邮件" id="r_emial"/>
-          <button id="create">创建账户</button>
-          <p class="message">已经有了一个账户? <a href="#">立刻登录</a></p>
-        </form>
-        <form class="login-form">
-          <input type="text" placeholder="用户名" id="user_name"/>
-          <input type="password" placeholder="密码" id="password"/>
-          <button id="login">登　录</button>
-          <p class="message">还没有账户? <a href="zhuce.html">立刻创建</a></p>
+        
+        <form class="login-form"  action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+          <input type="text" placeholder="用户名" name="admin"/>
+          <input type="password" placeholder="密码" name="password"/>
+          <button id="login" name="login">登　录</button>
+          <p class="message">还没有账户? <a href="http://localhost/juooo/zhuce-z.php">立刻创建</a></p>
         </form>
       </div>
     </div>
 </div>
 
-<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-function check_login()
-{
- var name=$("#user_name").val();
- var pass=$("#password").val();
- if(name=="sc.chinaz.com" && pass=="sc.chinaz.com")
- {
-  alert("登录成功！");
-  $("#user_name").val("");
-  $("#password").val("");
-
- }
- else
- {
-  $("#login_form").removeClass('shake_effect');  
-  setTimeout(function()
-  {
-   $("#login_form").addClass('shake_effect')
-  },1);  
- }
-}
-function check_register(){
-    var name = $("#r_user_name").val();
-    var pass = $("#r_password").val();
-    var email = $("r_email").val();
-    if(name!="" && pass=="" && email != "")
-     {
-      alert("注册成功！");
-      $("#user_name").val("");
-      $("#password").val("");
-     }
-     else
-     {
-      $("#login_form").removeClass('shake_effect');  
-      setTimeout(function()
-      {
-       $("#login_form").addClass('shake_effect')
-      },1);  
-     }
-}
-$(function(){
-    $("#create").click(function(){
-        check_register();
-        return false;
-    })
-    $("#login").click(function(){
-        check_login();
-        return false;
-    })
-    $('.message a').click(function () {
-        $('form').animate({
-            height: 'toggle',
-            opacity: 'toggle'
-        }, 'slow');
-    });
-})
-</script>
 </body>
 </html>
+<?php 
+    $servername="localhost";
+    $name="text";
+    $password="123456";
+    $mysql="user-value";
+    $connect=new mysqli($servername,$name,$password,$mysql);
+    if($connect->connect_error) { 
+      die("数据库连接失败:".$connect->connect_error);
+  }
+  echo "数据库连接成功";
+
+ $admin=$_POST["admin"];
+//  获取表单id
+ $password=$_POST["password"];
+//  获取表单密码
+// $mima=$_cookie["mima"];
+// $select="select * from user where  '%".$_admin."%';";
+
+    // if($connect->query($select)) {
+    //     echo "输出数据成功";
+    // }else {
+    //     echo "输出数据失败";
+    // };
+
+
+
+//基于刚创建的连接对象进行一次查询操作
+$query= mysqli_query($connect,'select id from user ');
+ 
+ if(!$query){
+   exit('<h1>查询失败</h1>');
+ }
+//遍历结果集
+while ($row=mysqli_fetch_assoc($query)){
+  //打印结果集
+ var_dump($row);
+}
+ //释放结果集
+ mysqli_free_result($query);
+
+//  if(isset($_POST['login'])) 
+// //  检测变量是否设置
+//  {
+  
+//      if($admin===$select){ 
+    
+//       echo '<script language="JavaScript">;alert("登录成功");location.href="index1-z.html";</script>;';
+
+//     }
+// else{
+
+//    echo '<script language="JavaScript">;alert("账号或密码错误,请重新输入");</script>;';
+
+ 
+//  } 
+ 
+//  }
+ 
+?>
