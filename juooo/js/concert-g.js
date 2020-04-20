@@ -99,7 +99,7 @@ function close() {
         console.log($(this).parent().hasClass("c1"))
         if ($(this).parent().hasClass("c1")) {
             $(".con-all5").addClass("on")
-            $(".con-cities").children().removeClass("on")
+            $(".con-text").children().removeClass("on")
         }
         if ($(this).parent().hasClass("c2")) {
             event.cancleBubble = true
