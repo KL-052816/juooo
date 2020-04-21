@@ -715,6 +715,12 @@ i{
     color: #999;
     background-color: #fff;
 }
+.ma-mast:hover{
+    color: orange;
+    border: orange 1px solid;
+}
+
+
 /* 底部开始 */
 .footer{
     width: 100%;
