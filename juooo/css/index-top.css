@@ -307,6 +307,8 @@ i{
     left: 0;
     top: 45px;
     background-color: #FAFAFA;
+    z-index: 10;
+    display: none;
 }
 .nav-left a{
     color: #333333;

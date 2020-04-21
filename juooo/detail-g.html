@@ -1,83 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/detail-g.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-
 <body>
-    <!-- 头部 -->
-    <div class="banner"></div>
-    <div class="wrap">
-        <div class="head clearfix">
-            <div class="he-le">
-                <div class="he-le-1 clearfix">
-                    <div class="he-img">
-                        <img src="./img/detail-g.jpg" alt="">
-                    </div>
-                    <div class="he-text">
-                        <div class="he-name">大宁艺术·源 公益惠民系列 巴西钢琴大师 凯奥·帕加诺钢琴独奏音乐会</div>
-                        <div class="he-price">￥80</div>
-                    </div>
-                </div>
-            </div>
-            <div class="he-ri">
-                <div class="he-ritop clearfix">
-                    <div class="he-ri-a">
-                        <p>2020.05.12 周二 19:30 <span class="glyphicon glyphicon-menu-right"></span></p>
-                        <p>上海 | 上海大宁剧院</p>
-                        <p>平型关路1222号(近灵石路)</p>
-                    </div>
-                     <div class="he-riimg"><img src="./img/map-g.png" alt=""></div>
-                </div>
-                <div class="he-xuan clearfix">
-                  <div class="he-ding">
-                    <span><i class="glyphicon glyphicon-ok-circle"></i> 可选座
-                    </span>
-                     <span><i class="glyphicon glyphicon-ok-circle"></i> 电子票</span>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="nav">
-          <div class="nav-le">
-              <img src="./img/home-g.png" alt="">
-          </div>
-          <div class="nav-ri">
-              <div class="nav-ce">
-                  选座买票
-              </div>
-          </div>
-        </div>
+    <div id="content">
+
     </div>
-       <!-- 内容 -->
-       <div class="content">
-           <div></div>
-           <div></div>
-       </div>
 
-    <script src="./js/jquery.min.js"></script>
+
     <script>
-        // 获取id 请求后台数据
-        var string = window.location.search;
-        var id = string.split("=")[1];
-        var xhr = new XMLHttpRequest();
-        var con = document.getElementById("content");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var article = JSON.parse(xhr.responseText);
-                console.log(article);
+        var string=window.location.search;
+          console.log(string)
 
+
+        var id=(string.split("=")[1]);
+        var xhr=new XMLHttpRequest();
+        var con=document.getElementById("content");
+        xhr.onreadystatechange=function() {
+            if(xhr.readyState===4&&xhr.status===200) {
+                var article=JSON.parse(xhr.responseText);
+                console.log(article);
+                content.innerHTML=`
+                    <h2>${article.title}</h2>
+                    <div>${article.content}</div>
+                `
             }
         }
-        xhr.open('GET', 'http://localhost/juooo/detail-g.php?id=' + id, true);
+        xhr.open('GET','http://localhost/juooo/detail-g.php?id='+id,true);
         xhr.send();
     </script>
 </body>
-
 </html>
