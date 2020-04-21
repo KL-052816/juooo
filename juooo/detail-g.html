@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/detail-g.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
+
 <body>
-<<<<<<< HEAD
     <!-- 头部 -->
     <div class="banner"></div>
     <div class="wrap">
@@ -58,33 +62,24 @@
         <div class="con-left"></div>
         <div class="con-right"></div>
     </div>
-=======
-    <div id="content">
 
-    </div>
->>>>>>> 7ebad5baaae3313b9bf9918ba5b71f3d32f08bca
-
-
+    <script src="./js/jquery.min.js"></script>
     <script>
-        var string=window.location.search;
-          console.log(string)
-
-
-        var id=(string.split("=")[1]);
-        var xhr=new XMLHttpRequest();
-        var con=document.getElementById("content");
-        xhr.onreadystatechange=function() {
-            if(xhr.readyState===4&&xhr.status===200) {
-                var article=JSON.parse(xhr.responseText);
+        // 获取id 请求后台数据
+        var string = window.location.search;
+        var id = string.split("=")[1];
+        var xhr = new XMLHttpRequest();
+        var con = document.getElementById("content");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var article = JSON.parse(xhr.responseText);
                 console.log(article);
-                content.innerHTML=`
-                    <h2>${article.title}</h2>
-                    <div>${article.content}</div>
-                `
+
             }
         }
-        xhr.open('GET','http://localhost/juooo/detail-g.php?id='+id,true);
+        xhr.open('GET', 'http://localhost/juooo/detail-g.php?id=' + id, true);
         xhr.send();
     </script>
 </body>
+
 </html>
