@@ -99,8 +99,7 @@
     width: 4px;
     height: 4px;
     background-color: #F96c02;
-    margin: 7px 0px 0px 7px;
-    
+    margin: 7px 0px 0px 7px;  
 }
 .recommend-time{
     font-size: 20px;
@@ -170,8 +169,10 @@
 }
 /* 音乐剧模块 */
 .pcity{
-    padding-top: 20px;
-    padding-bottom: 400px;
+    padding-top: 40px;
+    padding-bottom: 85px;
+    position: relative;
+    background: #FAFAFA;
 }
 .pcity-city{
     text-align: center;
@@ -181,21 +182,23 @@
     white-space: nowrap;
     padding: 40px 10px 24px;
 }
-.pcity-city>a{
+.pcity-city a{
     display: inline-block;
     position: relative;
-    height: 30px;
-    /* padding: 0px 15px; */
+    height: 20px;
+    padding: 0px 10px;
     color: #999;
+    border-right: 1px solid #ebebeb;
 }
 .pcity-city span{
-    border-right: 1px solid #ebebeb;
+    display: inline-block;
+    height: 30px;
     padding: 0px 15px;
 }
-.pcity-city>a:last-child{
+.pcity-city a:last-child{
     border: none;
 }
-.pcity-city>a:hover{
+.pcity-city span:hover{
     color: #ff7919;
     border-bottom: 2px solid #ff7919;
 }
@@ -203,9 +206,41 @@
     color: #ff7919;
     border-bottom: 2px solid #ff7919;
 }
+/* citys模块 */
+.citys{
+    display: none;
+    position: absolute;
+    width: 455px;
+    right: 130px;
+    top:135px;
+    z-index: 3;
+    background: #fff;
+    padding: 8px 16px;
+    border: 1px solid #ebebeb;
+    text-align: left;
+}
+.citys a{
+    display: inline-block;
+    width: 101px;
+    height: 30px;
+    text-align: left;
+    color: #333333;
+}
+.citys a span{
+    color: #999999;
+    padding: 0px 12px;
+    letter-spacing: .15em;
+}
+.citys li a:hover{
+    color: #ff7919;
+}
+.citys li a:hover span{
+    color: #ff7919;
+}
 /*内容模块*/
 .box{
-    padding: 30px 0px 400px 0px;
+    /* position: relative; */
+    padding: 30px 0px 40px 0px;
 }
 .picture{
     width: 240px;
@@ -223,40 +258,57 @@
 }
 .picture .p1{
     position: relative;
-    top:25px;
+    top:28px;
     left:15px;
+    width: 210px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .picture:hover{
-    border: 1px solid orange;
+    border: 1px solid #F96c02;
     transform: all 1s;
+}
+.picture:hover p{
+    color: #f96C02;
 }
 .money{
     position: relative;
     font-size: 24px;
     color: #f96C02;
     left:12px;
-    top:27px;
+    top:37px;
 }
 .qi{
     font-size: 14px;
     color: #999999;
     position: relative;
-    top:25px;
+    top:35px;
     left:15px;
 }
 .time{
     font-size: 14px;
     color: #999999;
     position: relative;
-    top:25px;
+    top:46px;
     left:30px;
+    width: 120px;
+    display:inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* 更多 */
 .more{
     width: 100%;
     height: 48px;
     text-align: center;
-    margin-top:40px ;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    clear:both;
+    position: relative;
+    top: 40px;
 }
 .more>a{
     display: inline-block;

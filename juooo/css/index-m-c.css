@@ -1,0 +1,199 @@
+.recommend-line .icon-left-c{
+    display: block;
+    width: 25px;
+    height: 61px;
+    position: absolute;
+    top: 110px;
+    /* z-index: 4; */
+    background: url(../img/icon-global-list.jpg)-65px -2px no-repeat;
+}
+.recommend-line .icon-right-c{
+    display: block;
+    width: 25px;
+    height: 61px;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    background: url(../img/icon-global-list.jpg)-93px -2px no-repeat;
+}
+.recommend-line .icon-left-c:hover{
+    background: url(../img/icon-global-list.jpg)-65px -66px no-repeat;
+}
+.recommend-line .icon-right-c:hover{
+    background: url(../img/icon-global-list.jpg)-93px -66px no-repeat;
+}
+.show{
+    position: relative;
+    padding: 40px 0px 120px 0px;
+}
+.show .recommend-p{
+    margin-top: -40px;
+}
+.show img{
+    width: 100%;
+    height: 100%;
+}
+.show div p{
+    color: #ffffff;
+    font-size: 14px;
+}
+.show div p:first-child{
+    margin: 5px 0 0 5px;
+}
+.show div p:last-child{
+    font-size: 16px;
+}
+.show div p:last-child span{
+    font-size: 18px;
+}
+.show-frist{
+    width: 187px;
+    height: 91px;
+    margin-top: 50px;
+}
+.show-frist-1{
+    background-color: rgba(220, 39, 39,.8);
+    position: absolute;
+    top: 35px;
+    text-align: left;
+}
+.show div p:last-child{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 16px;
+}
+
+.show-second{
+    width: 187px;
+    height: 209px;
+    margin-top: 10px;
+}
+.show-second-1{
+    background-color: rgba(220, 39, 39,.7);
+    position: absolute;
+    top: 178px;
+    text-align: left;
+}
+.show-thrid{
+    width: 274px;
+    height: 310px;
+    position: absolute;
+    top: 85px;
+    left: 197px;
+}
+.show-thrid-1{
+    background-color: rgba(220, 39, 39,.8);
+    position: absolute;
+    top: 85px;
+    text-align: left;
+}
+.show-fourth{
+    width: 435px;
+    height: 91px;
+    position: absolute;
+    top: 85px;
+    left: 481px;
+    background: #dc2727 url(../img/music-module-c.jpg) no-repeat;
+    color: #ffffff;
+}
+.show-fourth .t1{
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 24px 0 0;
+    text-align: right;
+}
+.show-fourth .t1 span{
+    font-size: 40px;
+    padding-right: 5px;
+    font-family: "Georgia";
+}
+.show-fourth .t2{
+    font-size: 16px;
+    padding: 0 24px 0 0;
+    text-align: right;
+}
+.show-fifth{
+    width: 435px;
+    height: 209px;
+    position: absolute;
+    top: 186px;
+    left: 481px;
+}
+.show-fifth-1{
+    background-color: rgba(220, 39, 39,.8);
+    position: absolute;
+    top: 186px;
+    text-align: left;
+}
+.show-sixed{
+    width: 274px;
+    height: 310px;
+    position: absolute;
+    top: 85px;
+    left: 926px;
+}
+.show-sixed-1{
+    background-color: rgba(220, 39, 39,.8);
+    position: absolute;
+    top: 85px;
+    text-align: left;
+}
+.show-frist-1,.show-second-1,.show-thrid-1,.show-fifth-1,.show-sixed-1{
+    display: none;
+}
+.list-nav a:hover{
+    border-bottom:2px solid #dc2727;
+}
+.active{
+    border-bottom:2px solid #dc2727;
+}
+.recommend .recommend-line{
+    border-top:1px dashed #dc2727;
+}
+.recommend-li:hover .recommend-icon{
+    border: 1px solid #dc2727;
+}
+.recommend-li:hover .recommend-box{
+    border: 1px solid #dc2727;
+}
+.recommend-icon i{
+    background-color: #dc2727;
+}
+.icon-top{
+    background-color: #dc2727;
+}
+.icon-bottom{
+    background-color: #dc2727;
+}
+.img-price{
+    color: #dc2727;
+    position: absolute;
+}
+.pcity-city span:hover{
+    color: #dc2727;
+    border-bottom: 2px solid #dc2727;
+}
+.pcity-city .active-a{
+    color: #dc2727;
+    border-bottom: 2px solid #dc2727;
+}
+.citys li a:hover{
+    color: #dc2727;
+}
+.citys li a:hover span{
+    color: #dc2727;
+}
+.picture:hover{
+    border: 1px solid #dc2727;
+}
+.picture:hover p{
+    color: #dc2727;
+}
+.money{
+    color: #dc2727;
+}
+.more>a:hover{
+    color: #dc2727;
+    border: 1px solid #dc2727;
+}

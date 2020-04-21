@@ -6,6 +6,7 @@
     header("Access-Control-Allow-Headers: x-requested-with, content-type");
     // 允许请求的字段
     $c=$_GET['city'];
+    $ty=$_GET['type'];
     // 连接数据库
     $server="localhost";
     $name="root";
@@ -19,10 +20,10 @@
     }
     // 获取数据
     if($c=="全部"){
-        $sql="select * from orange limit 15";
+        $sql="select * from orange where type='{$ty}' limit 15";
         
     }else{
-        $sql="select * from orange where city='{$c}' limit 15;";
+        $sql="select * from orange where city='{$c}'and type='{$ty}' limit 15;";
         
     };
     // $sql="select * from orange limit 15";
