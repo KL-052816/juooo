@@ -174,89 +174,14 @@
     padding-bottom: 400px;
 }
 .pcity-city{
-    text-align: center;
-    font-size: 14px;
-    color: #999;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 40px 10px 24px;
-}
-.pcity-city>a{
-    display: inline-block;
-    position: relative;
-    height: 30px;
-    /* padding: 0px 15px; */
-    color: #999;
-}
-.pcity-city span{
-    border-right: 1px solid #ebebeb;
-    padding: 0px 15px;
-}
-.pcity-city>a:last-child{
-    border: none;
-}
-.pcity-city>a:hover{
-    color: #ff7919;
-    border-bottom: 2px solid #ff7919;
-}
-.pcity-city .active-a{
-    color: #ff7919;
-    border-bottom: 2px solid #ff7919;
-}
-/*内容模块*/
-.box{
-    padding: 30px 0px 400px 0px;
-}
-.picture{
-    width: 240px;
-    height: 395px;
-    background: #fff;
-    float: left;
-    border: 1px solid #ebebeb;
-}
-.picture img{
-    width: 200px;
-    height: 265px;
-    position: relative;
-    top:15px;
-    left:15px;   
-}
-.picture .p1{
-    position: relative;
-    top:25px;
-    left:15px;
-}
-.picture:hover{
-    border: 1px solid orange;
-    transform: all 1s;
-}
-.money{
-    position: relative;
-    font-size: 24px;
-    color: #f96C02;
-    left:12px;
-    top:27px;
-}
-.qi{
-    font-size: 14px;
-    color: #999999;
-    position: relative;
-    top:25px;
-    left:15px;
-}
-.time{
-    font-size: 14px;
-    color: #999999;
-    position: relative;
-    top:25px;
-    left:30px;
+    
 }
 /* 更多 */
 .more{
     width: 100%;
     height: 48px;
     text-align: center;
-    margin-top:40px ;
+    margin-top:20px ;
 }
 .more>a{
     display: inline-block;

@@ -18,8 +18,3 @@ $(".w1204").on("click",".linb", (event)=>{
     $(event.tarage).addClass("active")
     
 })
-$(".pcity-city a").on("click",(event)=>{
-    $(".pcity-city a").removeClass("active-a")
-    console.log(1111,event.tarage)
-    $(event.tarage).addClass("active-a")
-})
