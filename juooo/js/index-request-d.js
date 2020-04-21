@@ -14,7 +14,7 @@ xhr.onreadystatechange=function(){
         <ul >
         <li>
             <div class="a-c-img">
-                <a href="">
+                <a href="javascript:void(0);">
                     <i></i>
                     <img src="./img/all1.jpg" alt="">
                 </a>
@@ -37,7 +37,7 @@ xhr.onreadystatechange=function(){
         </li>
         <li>
             <div class="a-c-img">
-                <a href="" title="${list[2].name}">
+                <a href="./detail-g.html?id=${list[3].id}" title="${list[2].name}">
                     <i></i>
                     <img src="${list[2].photo}" alt="">
                 </a>
@@ -47,7 +47,7 @@ xhr.onreadystatechange=function(){
                 </div>
             </div>
             <div class="a-c-title">
-                <a href="">${list[2].name}</a>
+                <a href="javascript:void(0);">${list[2].name}</a>
             </div>
             <div class="a-c-price">
                 <div>${list[2].type}</div>
