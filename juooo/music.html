@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聚橙网</title>
+    <!-- 清除默认样式 -->
+    <link rel="stylesheet" href="css/reset-l.css">
+    <link rel="stylesheet" href="css/index-top-l.css">
+    <link rel="stylesheet" href="font-l//iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min-l.css">
+    <!-- 引入js -->
+    <script src="js/jquery.min-l.js"></script>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="header-top">
+            <div class="heart">
+                <div class="left">汇聚每一个感动</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href=""><i></i>手机购票</a>
+                            <div class="mobile">
+                            <img src="img/3.9-l.png" alt="">
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="heart">
+                <div class="header-bottom-top">
+                    <!-- logo -->
+                    <div class="logo"><a href=""></a></div>
+                    <!-- 全国 -->
+                    <div>
+                        <div class="all">
+                            <span>全国</span>
+                            <i></i>
+                            <!-- 隐藏块 -->
+                            <div id="a-display">
+                                <div class="a-title">
+                                    <span>全国</span>
+                                    <i></i>
+                                    <p>当前全国共有<span>1102</span>场演出，城市后数字代表演出场次</p>
+                                    <i class="a-close"></i>
+                                </div>
+                                <div>
+                                    <!-- 地区列表 -->
+                                    <ul>
+                                    <li>
+                                        <span>全    国</span>
+                                        <div>
+                                            <a href="">全国<span>(1102)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华南地区</span>
+                                        <div>
+                                            <a href="">深圳<span>(212)</span></a>
+                                            <a href="">广州<span>(1102)</span></a>
+                                            <a href="">香港<span>(1102)</span></a>
+                                            <a href="">佛山<span>(1102)</span></a>
+                                            <a href="">澳门<span>(1102)</span></a>
+                                            <a href="">福州<span>(1102)</span></a>
+                                            <a href="">泉州<span>(1102)</span></a>
+                                            <a href="">厦门<span>(1102)</span></a>
+                                            <a href="">台北<span>(1102)</span></a>
+                                            <a href="">福建<span>(1102)</span></a>
+                                            <a href="">陵水<span>(1102)</span></a>
+                                            <a href="">桂林<span>(1102)</span></a>
+                                            <a href="">郴州<span>(1102)</span></a>
+                                            <a href="">钦州<span>(1102)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华东地区</span>
+                                        <div>
+                                            <a href="">上海<span>(262)</span></a>
+                                            <a href="">杭州<span>(75)</span></a>
+                                            <a href="">苏州<span>(6)</span></a>
+                                            <a href="">宁波<span>(19)</span></a>
+                                            <a href="">南京<span>(11)</span></a>
+                                            <a href="">合肥<span>(12)</span></a>
+                                            <a href="">济南<span>(19)</span></a>
+                                            <a href="">无锡<span>(18)</span></a>
+                                            <a href="">常州<span>(1)</span></a>
+                                            <a href="">舟山<span>(7)</span></a>
+                                            <a href="">绍兴<span>(0)</span></a>
+                                            <a href="">金华<span>(1)</span></a>
+                                            <a href="">赣州<span>(0)</span></a>
+                                            <a href="">德州<span>(0)</span></a>
+                                            <a href="">南平<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华北地区</span>
+                                        <div>
+                                            <a href="">北京<span>(66)</span></a>
+                                            <a href="">石家庄<span>(46)</span></a>
+                                            <a href="">天津<span>(9)</span></a>
+                                            <a href="">太原<span>(1)</span></a>
+                                            <a href="">廊坊<span>(20)</span></a>
+                                            <a href="">兴安盟<span>(12)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>西南地区</span>
+                                        <div>
+                                            <a href="">成都<span>(36)</span></a>
+                                            <a href="">重庆<span>(28)</span></a>
+                                            <a href="">昆明<span>(0)</span></a>
+                                            <a href="">贵阳<span>(20)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华中地区</span>
+                                        <div>
+                                            <a href="">长沙<span>(5)</span></a>
+                                            <a href="">武汉<span>(15)</span></a>
+                                            <a href="">岳阳<span>(0)</span></a>
+                                            <a href="">郑州<span>(13)</span></a>
+                                            <a href="">宜昌<span>(21)</span></a>
+                                            <a href="">随州<span>(0)</span></a>
+                                            <a href="">信阳<span>(0)</span></a>
+                                            <a href="">咸宁<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>东北地区</span>
+                                        <div>
+                                            <a href="">大庆<span>(0)</span></a>
+                                            <a href="">沈阳<span>(6)</span></a>
+                                            <a href="">哈尔滨<span>(7)</span></a>
+                                            <a href="">长春<span>(0)</span></a>
+                                            <a href="">营口<span>(0)</span></a>
+                                            <a href="">吉林<span>(0)</span></a>
+                                            <a href="">抚顺<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>西北地区</span>
+                                        <div>
+                                            <a href="">西安<span>(11)</span></a>
+                                            <a href="">西宁<span>(0)</span></a>
+                                            <a href="">昌吉<span>(0)</span></a>
+                                            <a href="">延安<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>海外地区</span>
+                                        <div>
+                                            <a href="">新加坡<span>(1)</span></a>
+                                            <a href="">马来西亚<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="all-bottom">
+                            <a href="">
+                                <i></i>
+                                推荐全国站
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 搜索 -->
+                    <div class="search">
+                        <div class="s-input">
+                            <input type="text" placeholder="冰雪奇缘">
+                            <div id="s-btn"><i></i></div>
+                        </div>
+                        <div class="s-list">
+                            <ul>
+                                <li><a href="">冰雪奇缘</a></li>
+                                <li><a href="">第一次约会</a></li>
+                                <li><a href="">摇滚红与黑</a></li>
+                                <li><a href="">魔女宅急便</a></li>
+                                <li><a href="">咖啡因</a></li>
+                                <li><a href="">猫CATS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 头部导航 -->
+                <div class="header-bottom-bottom">
+                    
+                    <div href="index.html" class="shop">全部商品分类
+                         <div class="nav-left">
+                            <a href=""><i class="nlbg1"></i><span>演唱会</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>音乐会</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>话剧歌剧</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>儿童亲子</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>音乐剧</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>戏曲综艺</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>展览</span><i class="nlbg2"></i></a> 
+                            <!-- 左侧导航隐藏块 -->
+                            <div class="nl-none">
+                                <ul>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">流行</a>
+                                            <a href="">摇滚</a>
+                                            <a href="">民谣</a>
+                                            <a href="">民族</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">交响</a>
+                                            <a href="">独奏</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">话剧</a>
+                                            <a href="">歌剧</a>
+                                            <a href="">歌舞剧</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">儿童剧</a>
+                                            <a href="">亲子活动</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">音乐剧</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">京剧</a>
+                                            <a href="">昆曲</a>
+                                            <a href="">越剧</a>
+                                            <a href="">相声小品</a>
+                                            <a href="">综艺</a>
+                                            <a href="">马戏杂耍</a>
+                                            
+                                        </div>
+                                        <div class="nln-r">
+                                            <a href="">其他</a>
+                                            <a href="">演讲</a>
+                                            <a href="">体育</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">展览</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="">流行音乐</a></li>
+                        <li><a href="">古典音乐</a></li>
+                        <li><a href="">舞台剧</a></li>
+                        <li><a href="">儿童亲子</a></li>
+                        <li><a href="">音乐剧</a></li>
+                        <li><a href="">VIP+专区</a></li>
+                    </ul>
+                    <!-- 欢聚橙卡 -->
+                    <div class="nav-right">
+                        <a href="">
+                            <img src="img/3.6-l.gif" alt="">
+                        </a>
+                    </div>
+                    <!-- 左侧导航 -->
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- 头部结束 -->
+    <!-- 轮播 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+           <img src="./img/1.1-l.jpg" alt="">      
+        </div>
+          <div class="swiper-slide">
+            <img src="./img/1.2-l.jpg" alt="">  
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/1.3-l.jpg" alt="">  
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <!-- 轮播结束 -->
+
+      <!-- 中间内容 -->
+      <div class="middle-content">
+          <div class="heart">
+              <div class="middle-picture">
+                 <div class="picture">
+                     <img src="img/1.4-l.jpg" alt="">
+                     <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
+                     <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                 </div>
+                 <div class="picture">
+                    <img src="img/1.5-l.jpg" alt="">
+                    <p class="p1">[上海]2020演出季开幕大戏法<br>国多媒体魔幻秀《神奇理论》-... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.6-l.jpg" alt="">
+                    <p class="p1">[北京] （演出取消） 聚橙出品|<br>百老汇现象级原版音乐剧《来... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.7-l.jpg" alt="">
+                    <p class="p1">[金华]悬疑推理音乐剧《水曜<br>日》中文版-金华站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.6-l.jpg" alt="">
+                    <p class="p1">[南京] （演出取消） 聚橙出品<br>|南京市文化消费政府补贴剧... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.6-l.jpg" alt="">
+                    <p class="p1">[上海] 【演出延期】 聚橙出品|<br>百老汇现象级原版音乐剧《来... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.8-l.jpg" alt="">
+                    <p class="p1">[上海] 聚橙制作|百老汇爱情音乐<br>轻喜剧《第一次约会》中文版-... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[上海] 【演出延期】 聚橙出品|<br>世界经典原版音乐剧《猫》CA... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.1-l.jpg" alt="">
+                    <p class="p1">[北京] 科幻巨作《献给阿尔吉侬<br>的花束》改编音乐剧中文版-北... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.7-l.jpg" alt="">
+                    <p class="p1">[成都] （演出取消） 悬疑推理音|<br>乐剧《水曜日》（Black Mary... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.2-l.jpg" alt="">
+                    <p class="p1">[广州] 韩雪、刘令飞领衔主演 年<br>度爆款音乐剧《白令行》</p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.3-l.png" alt="">
+                    <p class="p1">[上海] 聚橙制作|宫崎骏经典-暖<br>暖心成长音乐剧《魔女宅急便》-... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[济南] 【演出延期】 聚橙出品|<br>世界经典原版音乐剧《猫》CA... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.8-l.jpg" alt="">
+                    <p class="p1">[深圳] 聚橙制作|百老汇爱情音乐<br>轻喜剧《第一次约会》中文版-... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.6-l.jpg" alt="">
+                    <p class="p1">[成都] 【演出延期】 聚橙出品|<br>百老汇现象级原版音乐剧《来... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[石家庄] 聚橙出品|世界经典原<br>版音乐剧《猫》CATS-石家庄站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.8-l.jpg" alt="">
+                    <p class="p1">[广州] 聚橙制作|百老汇爱情音乐<br>轻喜剧《第一次约会》中文版-... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.6-l.jpg" alt="">
+                    <p class="p1">[深圳] 【演出延期】 聚橙出品|<br>百老汇现象级原版音乐剧《来... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.7-l.jpg" alt="">
+                    <p class="p1">[深圳] 音乐剧 《水曜日》-深圳<br>站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.4-l.jpg" alt="">
+                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>外百老汇怦然心动恋爱音乐剧... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[杭州] 世界经典原版音乐剧br>《猫》CATS-杭州站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[北京]  聚橙出品|世界经典原版<br>音乐剧《猫》CATS-北京站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[天津] 2020年世界经典原版音<br>乐剧《猫》CATS-天津站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[西安]  聚橙出品|世界经典原版<br>音乐剧《猫》CATS-西安站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.5-l.jpg" alt="">
+                    <p class="p1">[上海] 聚橙制作|法语音乐剧<br>《摇滚红与黑》-上海站</p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.9-l.jpg" alt="">
+                    <p class="p1">[深圳] 聚橙出品|世界经典原版<br>音乐剧《猫》CATS-深圳站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.5-l.jpg" alt="">
+                    <p class="p1">[广州] 聚橙制作|法语音乐剧<br>《摇滚红与黑》-广州站... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.5-l.jpg" alt="">
+                    <p class="p1">[深圳]  聚橙制作|法语音乐剧<br>《摇滚红与黑》-深圳站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.5-l.jpg" alt="">
+                    <p class="p1">[成都]  聚橙制作|法语音乐剧<br>《摇滚红与黑》-成都站 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.5-l.jpg" alt="">
+                    <p class="p1">[西安]  聚橙制作|法语音乐剧<br>《摇滚红与黑》-西安站 《... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.5-l.jpg" alt="">
+                    <p class="p1">[杭州]  聚橙制作|法语音乐剧<br>《摇滚红与黑》-杭州站 《... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/2.6-l.jpg" alt="">
+                    <p class="p1">[北京] 音乐剧《变身怪医》中文<br>版 </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+                <div class="picture">
+                    <img src="img/1.4-l.jpg" alt="">
+                    <p class="p1">[上海] 【演出延期】 聚橙制作|<br>爱情 “多感官”音乐轻喜剧《... </p>
+                    <span class="money">￥100</span><span class="qi">起</span> <span class="time">2020.04.18 19.30</span>
+                </div>
+              </div>
+            
+          </div>
+
+      </div>
+      <!-- 右侧导航 -->
+      <div class="siderbar-right" id="js-head-logo">
+        <a id="juo-meiqia">
+            <span class="sidebar-icon icon-tel-right"></span>
+            <div class="sidebar-text tel-num"></div>
+        </a>
+        <a class="js-weixin-icon">
+            <span class="sidebar-icon iconfont">&#xe695;</span>
+            <div class="sidebar-text weixin-num"></div>
+        </a>
+        <a>
+            <span class="sidebar-icon iconfont">&#xe631;</span>
+            <div class="sidebar-text phone-num"></div>
+        </a>
+        <a id="js-top">
+            <span class="sidebar-icon iconfont">&#xe74a;</span>
+            <div class="sidebar-text back-to-top"></div>
+        </a>
+
+    </div>
+      <!-- 底部 -->
+      
+      <div class="base-bottom-nav">
+        <div class="base-bottom-nav1">
+            <div class="nav1-inner tp clearfix">
+                <div class="heart">
+                <div class="wang wang1">
+                    <div class="wang1-title">
+                        帮助中心
+                    </div>
+                    <div class="help-list clearfix">
+                        <a href="###">新手指南</a>
+                        <a href="###">支付方式</a>
+                        <a href="###">售后服务</a>
+                        <a href="###">购票指南</a>
+                        <a href="###">配送方式</a>
+                    </div>
+                </div>
+                <div class="wang inner-line"></div>
+                <div class="wang wang2">
+                    <div class="wang2-title">
+                        400-185-8666
+                    </div>
+                    <div class="wang2-time">周一至周五： 08:30-20:00</div>
+                    <div class="wang2-time">周　　　末： 08:30-18:00</div>
+                </div>
+                <div class="wang inner-line"></div>
+                <div class="wang wang3 clearfix">
+                    <div class="wang3-img">
+                        <div class="img-box">
+                            <img src="img/4.4-l.png" alt="">
+                            <p class="wang3-img-desc">聚橙票务</p>
+                        </div>
+                    </div>
+                    <div class="wang3-img">
+                        <div class="img-box">
+                            <img src="img/4.3-l.png" alt="">
+                            <p class="wang3-img-desc">聚橙演艺</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="base-bottom-nav2">
+            <div class="base-bottom-nav2-inner tp">
+                <div class="nav2-list1">
+                    <p class="list1-title">聚橙旗下子品牌：</p>
+                    <div class="list1-desc clearfix">
+                        <a href="###">小橙堡</a>
+                        <a href="###" class="list1-desc-border">万有音乐系</a>
+                        <a href="###" class="list1-desc-border">聚橙音乐剧</a>
+                    </div>
+                </div>
+                <div class="nav2-list3 clearfix">
+                    <a href="###">关于我们</a>
+                    <a href="###" class="nav2-list3-border">联系我们</a>
+                    <a href="###" class="nav2-list3-border">加入我们</a>
+                    <a href="###" class="nav2-list3-border">服务条款</a>
+                    <a href="###" class="nav2-list3-border">媒体报道</a>
+                    <a href="###" class="nav2-list3-border">合作伙伴</a>
+                    <a href="###" class="nav2-list3-border">友情链接</a>
+                    <a href="###" class="nav2-list3-border">网站地图</a>
+                </div>
+                <div class="nav2-list4 clearfix clearfix">
+                    <p class="nav2-list4-text">Copyright 2007-2018 ©
+                        深圳市聚橙演艺联盟票务有限公司 | 粤ICP备17063893号-2</p>
+                    <div class="nav2-list4-box">
+                        <em> </em>
+                    </div>
+                    <p class="nav2-list4-text">粤公网安备 44030502000578号</p>
+                </div>
+                <div class="nav2-list5">
+                    <a href="###" class="police pm"></a>
+                    <a href="###" class="watch pm"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index-top-l.js"></script>
+    <script src="js/swiper.min-l.js"></script>
+    <script src="js/jquery.min-l.js"></script>
+
+  
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 5000,//可选选项，自动滑动
+  //   speed:300,
+    loop: true,
+    pagination : '.swiper-pagination',
+    paginationClickable :true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+})  
+    </script>
+</body>
+</html>
