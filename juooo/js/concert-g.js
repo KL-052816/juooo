@@ -56,57 +56,58 @@ $(".nl-none ul li").on({
 })
 // 头部结束
 // 中间导航
-   $(".con-text").on("click","a",function(){ 
-       $(".c1").remove()
-       $(".con-all5").removeClass("on")
-        $(this).parent().children().removeClass("on")
-        var c=`
+$(".con-text").on("click", "a", function () {
+    $(".c1").remove()
+    $(".con-all5").removeClass("on")
+    $(this).parent().children().removeClass("on")
+    var c = `
         <p class="c1 ">${$(this).text()}
         <span class="close">x</span></p>  
         `
-        $(".co-last").append(c)
-        $(this).addClass("on")
-        close(1)
-   })
-   $(".con-ty").on("click","a",function(){
-       $(".c2").remove()
-       $(".con-all1").removeClass("on")
-       $(this).parent().children().removeClass("on")
-       var c=`
+    $(".co-last").append(c)
+    $(this).addClass("on").addClass("d1")
+    close()
+})
+$(".con-ty").on("click", "a", function () {
+    $(".c2").remove()
+    $(".con-all1").removeClass("on")
+    $(this).parent().children().removeClass("on")
+    var c = `
        <p class="c2 ">${$(this).text()}
        <span class="close">x</span></p>  
        `
-       $(".co-last").append(c)
-       $(this).addClass("on")
-       close(2)
-   })
-   $(".con-time").on("click","a",function(){
+    $(".co-last").append(c)
+    $(this).addClass("on")
+    close()
+})
+$(".con-time").on("click", "a", function () {
     $(".c3").remove()
     $(".con-all2").removeClass("on")
     $(this).parent().children().removeClass("on")
-    var c=`
+    var c = `
     <p class="c3 ">${$(this).text()}
     <span class="close">x</span></p>  
     `
     $(".co-last").append(c)
     $(this).addClass("on")
-    close(3)
+    close()
 })
 // 已选条件删除
-function close(c){
-    $(".close").on("click",function(){
+function close() {
+    $(".close").on("click", function () {
         $(this).parent().removeClass("on").addClass("hide")
-        console.log(c)
-        if(c==1){
-            window.event.returnValue=false
+        console.log($(this).parent().hasClass("c1"))
+        if ($(this).parent().hasClass("c1")) {
             $(".con-all5").addClass("on")
-            $(".con-cities").children().removeClass("on")
-        }else if(c==2){
-            window.event.returnValue=false
-                $(".con-all1").addClass("on")
-                $(".con-ty").children().removeClass("on")
-        }else if(c==3) {
-            window.event.returnValue=false
+            $(".con-text").children().removeClass("on")
+        }
+        if ($(this).parent().hasClass("c2")) {
+            event.cancleBubble = true
+            $(".con-all1").addClass("on")
+            $(".con-ty").children().removeClass("on")
+        }
+        if ($(this).parent().hasClass("c3")) {
+            event.cancleBubble = true
             $(".con-all2").addClass("on")
             $(".con-time").children().removeClass("on")
         }
