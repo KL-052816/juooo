@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/glyphicons-halflings-regular.svg">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        .warp {
+    width: 540px;
+    height:auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+a {
+    text-decoration: none;
+}
+
+.test{
+font-size: 25px;
+text-align: center;
+}
+.warp .content1 {
+    width: 540px;
+    height:59px;
+border: 1px solid #ebebeb;
+position: fixed;
+top: 0;
+z-index: 999;
+background-color: white;
+}
+
+.a1 {
+    float: left;
+    color: black;
+    transform: scale(1.5);
+    margin-top: 15px;
+}
+
+.a2 {
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: -50px;
+    color: black;
+    transform: scale(2.5);
+    margin-right: 10px;
+}
+.ul{
+    width: 160px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 47px;
+    right: 0;
+    font-size: 20px;
+    padding-top: 10px;
+   
+}
+.ul li{
+    margin-top: 14px;
+    margin-left: 16px;
+}
+.a1:hover {
+    text-decoration: none;
+}
+
+.a2:hover {
+    text-decoration: none;
+}
+.warp-fist{
+    width: 100%;
+    height: 420px;
+}
+.warp-fist .warp-img{
+    width: 400px;
+    height: 300px;
+    background-color: black;
+    margin: 0 auto;
+   margin-top:  85px;
+}
+.warp-fist .warp-img .warp-img1{
+    width: 300px;
+    height: 240px;
+    border: 3px solid #f0e0ae; 
+    margin: 55px;
+   position: relative;
+   top: 25px;
+} 
+.warp-fist .warp-img .warp-img1 .font-first{
+width: 150px;
+height: 50px;
+background-color: #f0e0ae;
+font-size: 25px;
+text-align: center;
+margin: 0 auto;
+padding: 10px;
+position: relative;
+top: 40px;
+}
+.warp-fist .warp-img .warp-img1 .warp-font2{
+width: 200px;
+height: 60px;
+text-align: center;
+border-bottom: 1px solid #f0e0ae;
+font-size: 20px;
+margin: 45px;
+color: #f0e0ae;
+line-height: 30px;
+}
+.warp-fist .warp-img .warp-img1 .warp-font2 small{
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+    color: #f0e0ae;
+    opacity: 0.7;
+    line-height: 40px;
+}
+.warp-font3 {
+    width: 250px;
+height: 60px;
+text-align: center;
+font-size: 15px;
+margin: 25px;
+color: #f0e0ae;
+line-height: 30px;
+position: relative;
+    bottom: 30px;
+}
+.warp-font3 .spn2{
+display: inline-block;
+font-size: 15px;
+    vertical-align: middle;
+    color: black;
+    background-color: gold;
+    opacity: 0.7;
+
+}
+.warp-fist .warp-img .warp-img1 .a3{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    text-decoration: underline;
+    color: #f0e0ae;
+}
+.warp-font4{
+    width: 330px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    border-radius: 30%;
+    background-color: orange;
+    font-size: 20px;
+    margin: 46px;
+    position: relative;
+    top: 25px;
+}
+
+ .warp-img2 .warp-font5{
+    width: 500px;
+    height: 688px;
+    border: 3px solid #f0e0ae;
+
+    margin: auto;
+}
+.warp-img2 .warp-font5 .p4{
+    padding: 2.74667rem 0 0.10667rem;
+    text-align: center;
+    color: #896039;
+    font-weight: bold;
+    font-size: 25px;
+}
+.warp-img2 .warp-font5 .ul1{
+    width:500px;
+    height: 608px;
+}
+.warp-img2 .warp-font5 .ul1 li{
+    width: 105px;
+    height: auto;
+    float: left;
+    margin: 10px;
+}
+.warp-img2 .warp-font5 .ul1 li p{
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    top: 10px;
+}
+.warp-img2 .warp-font5  .phto {
+    width: 110px;
+    height: 110px;
+    background: url(./img/5.png) 5px -212px no-repeat;
+    display: block;
+
+}
+.warp-img2 .warp-font5  .phto1 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -215px -212px no-repeat;
+    display: block;
+
+}
+
+.warp-img2 .warp-font5 .phto2 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -325px -100px no-repeat;
+    display: block;
+
+}
+
+.warp-img2 .warp-font5  .phto3 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -325px 10px no-repeat;
+    display: block;
+
+}
+
+.warp-img2 .warp-font5  .phto4 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -105px -100px no-repeat;
+    display: block;
+
+}
+.warp-img2 .warp-font5  .phto5{
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -215px -100px no-repeat;
+    display: block;
+
+}
+.warp-img2 .warp-font5  .phto6 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -105px -210px no-repeat;
+    display: block;
+
+}
+.warp-img2 .warp-font5  .phto7 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -5px -100px no-repeat;
+    display: block;
+
+}
+.warp-img2 .warp-font5  .phto8 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -105px 10px no-repeat;
+    display: block;
+
+}
+.warp-img2 .warp-font5  .phto9 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) -215px 10px no-repeat;
+    display: block;
+
+}
+.warp-img2 .warp-font5  .phto10 {
+    width: 115px;
+    height: 110px;
+    background: url(./img/5.png) 5px 10px no-repeat;
+    display: block;
+
+}
+.warp-font6{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 20%;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    top: -100px;
+    left: 160px;
+}
+.warp-font7{
+    width: 100%;
+    height: 300px;
+    margin: 30px;
+}
+.warp-font7 img{
+    width: 445px;
+    height: 175px;
+}
+.warp-font9{
+
+width: 540px;
+height:59px;
+border: 1px solid #ebebeb;
+position: fixed;
+bottom: 0;
+z-index: 999;
+background-color: white;
+
+}
+.warp-font9 ul li{
+    width: 267px;
+    height: 59px;
+    /* border-right: 1px solid gray; */
+    line-height: 59px;
+    text-align: center;
+    float: left;
+    font-size: 19px;
+
+}
+.warp-font9 ul .li1{
+    width: 270px;
+    height: 59px;
+    background-color: orange;
+    color: white;
+}
+big{
+    color: orange;
+}
+
+    </style>
+</head>
+<body>
+    <div class="warp">
+    <div class="content1">
+        <a href="./index1-z.html" class="a1 glyphicon glyphicon-menu-left " aria-hidden="true">
+        </a>
+        <p class="test">橙PLUS卡<p>
+            <span class="a2 ">...</span>
+               
+            <ul class="ul" style="display: none;">
+                <li class="glyphicon glyphicon-home"> <a  href="index.html" >主页</a></li>
+                <li class="glyphicon glyphicon-user "  aria-hidden="true"> <a  href="logn-z.html" >我的聚橙</a></li>
+            </ul>
+
+        </div>
+        <div class="warp-fist">
+<div class="warp-img">
+    <div class="warp-img1">
+        <span class="a3">使用规则</span>
+        <p class="font-first">橙PLUS卡</p>
+        <div class="warp-font2">
+            <span>开卡999送200<small>储值卡</small></span>
+        </div>
+       <div class="warp-font3">
+           <span class="spn1">赠送VIP+会员</span> <span class="spn2">年</span> <span class="spn3">尊享10大权益</span>
+       </div>
+       
+    </div>
+    <div class="warp-font4">立即开卡</div>
+</div>
+        </div>
+        <div class="warp-img2">
+            <div class="warp-font5">
+                <p class="p4">VIP+尊享10大权益</p>
+                <ul class="ul1">
+                    <li><i class="phto"></i>
+                        <p>优先购票</p>  </li>
+                    <li><i class="phto1"></i>
+                        <p> 专属票价</p> </li>
+                    <li><i class="phto2"></i>
+                        <p> 专享折扣</p>
+                    </li>
+                    <li><i class="phto3"></i>
+                        <p> 专享券</p>
+                    </li>
+                    <li><i class="phto4"></i>
+                        <p> 全场包邮</p>
+                    </li>
+                    <li><i class="phto5"></i>
+                        <p> 双倍积分</p>
+                    </li>
+                    <li><i class="phto6"></i>
+                        <p> 增观影卷</p>
+                    </li>
+                    <li><i class="phto7"></i>
+                        <p> 明星活动</p>
+                    </li>
+                    <li><i class="phto8"></i>
+                        <p> 免费期刊</p>
+                    </li>
+                    <li><i class="phto9"></i>
+                        <p> 生日专享</p>
+                    </li>
+                    <li><i class="phto10"></i>
+                        <p> 尽请期待</p>
+                    </li>
+                </ul>
+               
+            </div>
+            <div class="warp-font6">
+                <p>立即开通￥99/年</p>
+            </div>
+        </div>
+      <div class="warp-font7">
+        <img src="./img/7-z.png" alt="">
+      </div>
+      <div class="warp-font9">
+          <ul>
+              <li>开卡现时送<big>￥200</big></li>
+              <li class="li1">立即开卡</li>
+          </ul>
+      </div>
+    </div>
+    
+</body>
+</html>
