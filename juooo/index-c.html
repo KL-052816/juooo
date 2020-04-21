@@ -7,10 +7,15 @@
     <!-- 清除默认样式 -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/public.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./css/index-show.css">
+=======
+    <link rel="stylesheet" href="font/iconfont-d.css">
+    <link rel="stylesheet" href="./css/index-show-c.css">
+>>>>>>> bce56dff32f22c1cfbd53dc6682a66511d14901b
     <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
     <!-- 引入js -->
-    <script src="js/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
 </head>
 <body>
     <!-- 头部开始 -->
@@ -362,6 +367,7 @@
         </div>
         <div class="wrap pcity">
             <p class="recommend-p">舞台剧</p>
+<<<<<<< HEAD
             <ul class="pcity-city">
                 <li>全部</li>
                 <li>深圳</li>
@@ -378,7 +384,129 @@
             <div class="more">
                 <a href="">查看更多</a>
             </div>
+=======
+            <div class="pcity-city">
+                <a class="pcity-city-a"><span class="active-a">全部</span></a>
+                <a class="pcity-city-a"><span>深圳</span></a>
+                <a class="pcity-city-a"><span>广州</span></a>
+                <a class="pcity-city-a"><span>北京</span></a>
+                <a class="pcity-city-a"><span>上海</span></a>
+                <a class="pcity-city-a"><span>成都</span></a>
+                <a class="pcity-city-a"><span>重庆</span></a>
+                <a class="pcity-city-a"><span>石家庄</span></a>
+                <a class="pcity-city-a"><span>武汉</span></a>
+                <a class="pcity-city-a"><span>杭州</span></a>
+                <a class="pcity-city-a pcity-city-a-last"><span>...</span></a>
+            </div>
+            <div class="citys">
+                <ul>
+                    <li>
+                        <a href="">金华<span>(1)</span></a>
+                        <a href="">秦皇岛<span>(1)</span></a>
+                        <a href="">长沙<span>(2)</span></a>
+                        <a href="">南京<span>(11)</span></a>
+                    </li>
+                    <li>
+                        <a href="">无锡<span>(1)</span></a>
+                        <a href="">陵水<span>(6)</span></a>
+                        <a href="">廊坊<span>(2)</span></a>
+                        <a href="">合肥<span>(1)</span></a>
+                    </li>
+                    <li>
+                        <a href="">苏州<span>(1)</span></a>
+                        <a href="">泉州<span>(2)</span></a>
+                        <a href="">南昌<span>(1)</span></a>
+                        <a href="">佛山<span>(4)</span></a>
+                    </li>
+                    <li>
+                        <a href="">南通<span>(4)</span></a>
+                        <a href="">宁波<span>(1)</span></a>
+                        <a href="">青岛<span>(3)</span></a>
+                        <a href="">天津<span>(1)</span></a>
+                    </li>
+                    <li>
+                        <a href="">西安<span>(11)</span></a>
+                        <a href="">郑州<span>(2)</span></a>
+                        <a href="">太原<span>(4)</span></a>
+                        <a href="">福州<span>(1)</span></a>
+                    </li>
+                    <li>
+                        <a href="">厦门<span>(1)</span></a>
+                        <a href="">沈阳<span>(16)</span></a>
+                        <a href="">济南<span>(17)</span></a>
+                        <a href="">贵阳<span>(1)</span></a>
+                    </li>
+                    <li>
+                        <a href="">常州<span>(1)</span></a>
+                        <a href="">哈尔滨<span>(5)</span></a>
+                        <a href="">温州<span>(1)</span></a>
+                        <a href="">柳州<span>(4)</span></a>
+                    </li>
+                    <li>
+                        <a href="">宜昌<span>(13)</span></a>
+                        <a href="">舟山<span>(1)</span></a>
+                        <a href="">兴安盟<span>(12)</span></a>
+                        <a href="">新加坡<span>(2)</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box wrap" id="box1"></div>
+            <div class="more " onclick="getNum1(city)">
+                <a>查看更多</a>
+            </div>
+            <script>
+                getNum("全部")
+                var city="全部"
+                $(".pcity-city").on("click",".pcity-city-a span", function(){
+                    city=$(this).html()
+                    getNum(city) 
+                })
+                var cont=document.getElementById("box1")
+                function getNum(city){
+                    var xhr=new XMLHttpRequest();
+                    xhr.onreadystatechange=function() {
+                        if(xhr.readyState===4 && xhr.status===200) {
+                            var conts=JSON.parse(xhr.responseText); 
+                            cont.innerHTML=""
+                            for(var i=0; i<conts.length; i++) {
+                                cont.innerHTML+=`
+                                    <div class="picture">
+                                        <img src="${conts[i].photo}" alt="">
+                                        <p class="p1">${conts[i].city}${conts[i].name}</p>
+                                        <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
+                                        </div>
+                                    `
+                            }  
+                        }
+                    }
+                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city, true);
+                    xhr.send(); 
+                }              
+                var cont=document.getElementById("box1")
+                function getNum1(city){
+                var xhr=new XMLHttpRequest();
+                    xhr.onreadystatechange=function() {
+                        if(xhr.readyState===4 && xhr.status===200) {
+                            var conts=JSON.parse(xhr.responseText);
+                            console.log(conts);
+                                for(var i=0; i<conts.length; i++) {
+                                    cont.innerHTML+=`
+                                        <div class="picture">
+                                            <img src="${conts[i].photo}" alt="">
+                                            <p class="p1">${conts[i].city}${conts[i].name}</p>
+                                            <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
+                                        </div>
+                                    `
+                                }  
+                        }
+                    }
+                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city, true);
+                    xhr.send(); 
+            }
+            </script>
+>>>>>>> bce56dff32f22c1cfbd53dc6682a66511d14901b
         </div>
+        
     </div>
     <div class="footer">
         <!-- 上部 -->
