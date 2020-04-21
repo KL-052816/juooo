@@ -182,3 +182,8 @@ body{
     font-size: 20px;
     margin-left: 50px;
 }
+/* content */
+.content{
+    width: 1200px;
+    height: 1200px;
+}
