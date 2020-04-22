@@ -24,11 +24,11 @@ if(preg_match("/^[_a-zA-Z0-9]{1,}$/",$_POST["admin"])&&preg_match("/^[a-zA-Z0-9]
   $admin=$_POST["admin"];
   $pwd=$_POST["pwd"];
   $insert="insert into user (id,password) values ('$admin','$pwd');";
-  if($connect->query($insert)) {
-    echo "数据插入成功";
-}else {
-    echo "数据插入失败";
-};
+//   if($connect->query($insert)) {
+//     echo "数据插入成功";
+// }else {
+//     echo "数据插入失败";
+// };
 
 
 

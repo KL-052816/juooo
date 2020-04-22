@@ -17,11 +17,11 @@ $admin= $_POST["admin"];
   $pwd= $_POST["pwd"];
 //根据用户名查密码password
 $select = "select password from user where id='{$admin}'";
-if($connect->query($select)) {
-  echo "输出数据成功";
-}else {
-  echo "输出数据失败";
-};
+// if($connect->query($select)) {
+//   echo "输出数据成功";
+// }else {
+//   echo "输出数据失败";
+// };
 //3.执行
 $reslut = $connect->query($select);
  //4.取数据
