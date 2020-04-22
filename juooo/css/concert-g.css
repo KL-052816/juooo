@@ -527,6 +527,11 @@ i{
     float: left;
     background-color: #ffffff;
 }
+.ma-le .no{
+    margin-top: 20px;
+    color: #666;
+    font-size: 20px;
+}
 .clearfix:after {
     display: block;
     visibility: hidden;

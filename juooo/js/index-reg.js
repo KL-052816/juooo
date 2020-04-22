@@ -7,3 +7,10 @@ $(".left-help>h2").click(function(){
 $(".left-help>ul a").click(function(){
     $(this).toggleClass("changeA")
 })
+
+// 搜索框跳转
+$("#s-btn").click(()=>{
+    var val=$("#search").val()
+    var t=encodeURI(val)
+    window.location.href="search-d.html?search="+t;
+})
