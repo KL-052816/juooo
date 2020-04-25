@@ -479,6 +479,9 @@ i{
 .hide{
     display: none !important;
 }
+#morecity{
+    display: inline-block !important;
+}
 /* 动态样式 */
 .con-cities{
   display: inline-block;
@@ -526,11 +529,6 @@ i{
     width: 957px;
     float: left;
     background-color: #ffffff;
-}
-.ma-le .no{
-    margin-top: 20px;
-    color: #666;
-    font-size: 20px;
 }
 .clearfix:after {
     display: block;

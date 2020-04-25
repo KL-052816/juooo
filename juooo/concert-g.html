@@ -314,7 +314,7 @@
                     <a class=" " href="#">南昌</a><span class="line  ">|</span>
                     <a class=" " href="#">南宁</a><span class="line  ">|</span>
                     <a class=" " href="#">佛山</a><span class="line  ">|</span>
-                    <a class=" " href="#">江门</a><span class="line  ">|</span>
+                    <a class=" here" href="#">江门</a><span class="line  ">|</span>
                     <a class=" hide " href="30">中山</a><span class="line  hide ">|</span>
                     <a class=" hide " href="31">大连</a><span class="line  hide ">|</span>
                     <a class=" hide " href="32">大庆</a><span class="line  hide ">|</span>
@@ -499,7 +499,7 @@
                     <a class=" hide " href="#">本溪</a><span class="line  hide ">|</span>
                     <a class=" hide " href="#">丹东</a><span class="line  hide ">|</span>
                     <a class=" hide " href="#">海南</a><span class="line  hide ">|</span>
-                    <a href="javascript:;" id="morecity" class="filter-more "> »</a>
+                    <span id="morecity" class="filter-more ">»</span>
                 </div>
             </div>
             <div class="co-item">
@@ -729,12 +729,14 @@
     <script>
         // 数据的获取渲染
         var main = document.getElementById("main")
-        get(0);
+        var city = "全部"
+        get(0)
         function get(data) {
             var xhr = new XMLHttpRequest()
             xhr.onreadystatechange = function () {
                 if (xhr.status === 200 && xhr.readyState === 4) {
                     var list = JSON.parse(xhr.responseText);
+                    console.log(list)
                     for (var i = 0; i < list.length; i++) {
                         main.innerHTML += `
                      <div class="main-1 clearfix">
@@ -763,7 +765,7 @@
         })
         // 详情页
         function sendTo(id) {
-            window.open("http://localhost:/juooo/detail-g.html?id=" + id);
+            window.open ("http://localhost:/juooo/detail-g.html?id=" + id) 
         }
         // 隐藏全部商品分类
         $(".sort").on({
@@ -774,19 +776,21 @@
                 $(".nav-left").hide()
             }
         })
-        // 中间导航 
+        // 中间导航
+        // 城市
         $(".con-text").on("click", "a", function () {
             $(".c1").remove()
             $(".con-all5").removeClass("on")
             $(this).parent().children().removeClass("on")
             var c = `
-        <p class="c1 "><span>${$(this).text()}</span>
+        <p class="c1 ">${$(this).text()}
         <span class="close">x</span></p>  
         `
             $(".co-last").append(c)
             $(this).addClass("on").addClass("d1")
             close()
         })
+        // 类型
         $(".con-ty").on("click", "a", function () {
             $(".c2").remove()
             $(".con-all1").removeClass("on")
@@ -799,6 +803,7 @@
             $(this).addClass("on")
             close()
         })
+        // 时间
         $(".con-time").on("click", "a", function () {
             $(".c3").remove()
             $(".con-all2").removeClass("on")
@@ -834,7 +839,11 @@
             })
         }
         // 中间导航结束
-        
+        //点击显示
+        $("#morecity").on("click", () => {
+            //  $(this).children().hasClass("here").nextAll().toggleClass("hide")
+            console.log($(".here").nextAll().toggleClass("hide"))
+        })
 
     </script>
     <script src="js/concert-g.js"></script>
