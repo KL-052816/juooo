@@ -421,7 +421,7 @@
                             cont.innerHTML=""
                             for(var i=0; i<conts.length; i++) {
                                 cont.innerHTML+=`
-                                    <div class="picture"  onclick="jump()">
+                                    <div class="picture"  onclick="jump(${conts[i].id})">
                                         <img src="${conts[i].photo}" alt="">
                                         <p class="p1">${conts[i].city}${conts[i].name}</p>
                                         <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
@@ -430,7 +430,7 @@
                             }  
                         }
                     }
-                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city+'&type='+type, true);
+                    xhr.open('GET','http://localhost/juooo/php/index-c.php?city='+city+'&type='+type, true);
                     xhr.send(); 
                 }              
                 var cont=document.getElementById("box1")
@@ -442,7 +442,7 @@
                             console.log(conts);
                                 for(var i=0; i<conts.length; i++) {
                                     cont.innerHTML+=`
-                                        <div class="picture"  onclick="jump()">
+                                        <div class="picture"  onclick="jump(${conts[i].id})">
                                             <img src="${conts[i].photo}" alt="">
                                             <p class="p1">${conts[i].city}${conts[i].name}</p>
                                             <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
@@ -451,7 +451,7 @@
                                 }  
                         }
                     }
-                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city+'&type='+type, true);
+                    xhr.open('GET','http://localhost/juooo/php/index-c.php?city='+city+'&type='+type, true);
                     xhr.send(); 
             }
             </script>

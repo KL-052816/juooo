@@ -329,7 +329,7 @@
             <p class="recommend-p">推荐演出</p>
             <div class="recommend-line">
                 <ul class="recommend-ul">
-                    <li class="recommend-li"  onclick="jump()">
+                    <li class="recommend-li"  onclick="jump(2)">
                         <i class="recommend-icon"><i></i></i>
                         <p class="recommend-time">05月29日</p>
                         <div class="recommend-bg">
@@ -347,7 +347,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="recommend-li recommend-li2"  onclick="jump()">
+                    <li class="recommend-li recommend-li2"  onclick="jump(7)">
                         <i class="recommend-icon"><i></i></i>
                         <p class="recommend-time">06月07日</p>
                         <div class="recommend-bg">
@@ -365,7 +365,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="recommend-li recommend-li3"  onclick="jump()">
+                    <li class="recommend-li recommend-li3"  onclick="jump(18)">
                         <i class="recommend-icon"><i></i></i>
                         <p class="recommend-time">06月25日</p>
                         <div class="recommend-bg">
@@ -475,7 +475,7 @@
                             cont.innerHTML=""
                             for(var i=0; i<conts.length; i++) {
                                 cont.innerHTML+=`
-                                    <div class="picture"  onclick="jump()">
+                                    <div class="picture"  onclick="jump(${conts[i].id})">
                                         <img src="${conts[i].photo}" alt="">
                                         <p class="p1">${conts[i].city}${conts[i].name}</p>
                                         <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
@@ -484,7 +484,7 @@
                             }  
                         }
                     }
-                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city+'&type='+type, true);
+                    xhr.open('GET','http://localhost/juooo/php/index-c.php?city='+city+'&type='+type, true);
                     xhr.send(); 
                 }              
                 var cont=document.getElementById("box1")
@@ -496,7 +496,7 @@
                             console.log(conts);
                                 for(var i=0; i<conts.length; i++) {
                                     cont.innerHTML+=`
-                                        <div class="picture"  onclick="jump()">
+                                        <div class="picture"  onclick="jump(${conts[i].id})">
                                             <img src="${conts[i].photo}" alt="">
                                             <p class="p1">${conts[i].city}${conts[i].name}</p>
                                             <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
@@ -505,7 +505,7 @@
                                 }  
                         }
                     }
-                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city+'&type='+type, true);
+                    xhr.open('GET','http://localhost/juooo/php/index-c.php?city='+city+'&type='+type, true);
                     xhr.send(); 
             }
             </script>
