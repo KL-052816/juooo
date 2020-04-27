@@ -1,0 +1,336 @@
+/* 底部开始 */
+.footer{
+    width: 100%;
+    border-top:1px solid #e0e0e0 ;
+}
+.f-white{
+    width: 100%;
+    background-color: #fff;
+}
+.f-top{
+    width: 100%;
+    height: 180px;
+}
+.f-top>ul>li{
+    float: left;
+    margin: 20px 0;
+    position: relative;
+}
+/* 线 */
+.f-top>ul>li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 120px;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+.f-top>ul>li:last-child:after{
+    display: none;
+}
+.help>li{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    margin-right: 14px;
+}
+.help>li>a{
+    color: #666666;
+    font-size: 12px;
+}
+.help>li>a:hover{
+    color: #ff7919;
+}
+.f-top>ul>li:first-child{
+    width: 344px;
+    height: 140px;
+    padding-right: 50px;
+}
+.f-top>ul>li:first-child>div{
+    height: 62px;
+    line-height: 62px;
+    font-size: 16px;
+    color: #333;
+}
+
+.f-top>ul>li:nth-child(2){
+    width: 500px;
+    text-align: center;
+}
+.tel{
+    font-size: 24px;
+    color: #ff7919;
+    width: 100%;
+    height: 62px;
+    line-height: 62px;
+}
+.time{
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+}
+.f-top>ul>li:last-child{
+    width: 355px;
+    padding-left: 36px;
+}
+.f-top>ul>li:last-child p{
+    color: #666666;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.ticket{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 85px;
+    text-align: center;
+}
+.show{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 45px;
+    text-align: center;
+}
+/* 下部 */
+.f-gray{
+    width: 100%;
+    background-color: #F7F7F7;
+    font-size: 12px;
+}
+
+.f-bottom>div{
+    width: 100%;
+    text-align: center;
+}
+.fb-one{
+    height: 62px;
+    line-height: 62px;
+    
+}
+.fb-one>p{
+    display: inline-block;
+    color: #999;
+}
+.fb-one>a{
+    display: inline-block;
+    line-height: 12px;
+    border-right:1px solid  #d6d6d6;
+    padding: 0 12px;
+    color: #666666;
+}
+.fb-one>a:hover{
+    color: #ff7919;
+}
+.fb-one>a:last-child{
+    border: none;
+}
+.fb-two li{
+    display: inline-block;
+}
+.fb-two li>a{
+    padding: 0 12px;
+    color: #808080;
+    border-right: 1px solid #d6d6d6;
+}
+.fb-two li>a:hover{
+    color: #ff7919;
+}
+.fb-two li>a:last-child{
+    border: none;
+}
+.fb-three{
+    height: 40px;
+    line-height: 35px;
+    margin-top: 10px;
+    color: #bdbdbd;
+}
+.fb-three span{
+    color: #bdbdbd;
+}
+.fb-three span>a{
+    color: #333;
+}
+.fb-four{
+    height: 52px;
+}
+.fb-four>a{
+    display: inline-block;
+    width: 84px;
+    height: 35px;
+    vertical-align: top;
+    background: url(../img/2.7-l.png) no-repeat;
+}
+.fb-four>a:first-child{
+    background-position: -89px -133px;
+    margin-right: 10px;
+}
+.fb-four>a:last-child{
+    background-position: -182px -133px;
+}
+/* 底部结束 */
+/* 侧边导航 */
+.siderbar-right {
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
+    z-index: 10;
+}
+
+.siderbar-right a {
+    display: block;
+    margin-top: -1px;
+    border: 1px solid #ebebeb;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.siderbar-right .xjj {
+    width: 125px;
+    height: 200px;
+    position: absolute;
+    top: -215px;
+    right: -20px;
+    border: none;
+    overflow: hidden;
+}
+
+.siderbar-right .xjj img {
+    width: 100%
+}
+
+.siderbar-right a .sidebar-icon {
+    display: block;
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #999;
+    background: #fff;
+}
+
+.siderbar-right a .icon-tel-right {
+    background: #fff url(../img/4.1-l.png) no-repeat center 10px;
+}
+
+.siderbar-right a .sidebar-icon.icon-weixin {
+    padding-top: 4px;
+    font-size: 28px;
+}
+
+.siderbar-right a:hover .sidebar-icon {
+    color: #fff;
+    background: #ff9244;
+}
+
+.siderbar-right a:hover .icon-tel-right {
+    background: #ff9244 url(../img/4.1-l.png) no-repeat center -44px;
+}
+
+.siderbar-right .sidebar-text {
+    position: absolute;
+    right: 53px;
+    width: 0;
+    height: 53px;
+    line-height: 50px;
+    text-align: right;
+    background: url(../img/4.2-l.png) 0 0 no-repeat;
+    -webkit-transition: .2s ease width;
+    -o-transition: .2s ease width;
+    -moz-transition: .2s ease width;
+    transition: .2s ease width;
+}
+
+.siderbar-right .weixin-num {
+    height: 175px;
+}
+
+.siderbar-right a:hover .sidebar-text {
+    display: block;
+    padding-right: 10px;
+    width: 140px;
+}
+
+.siderbar-right a .weixin-num {
+    top: 54px;
+    background-position: -60px 20px;
+    margin-top: -45px;
+}
+
+.siderbar-right a .tel-num {
+    top: 0;
+    background-position: -58px -213px;
+}
+
+.siderbar-right a:hover .weixin-num {
+    width: 147px;
+}
+
+.siderbar-right a:hover .tel-num {
+    width: 147px;
+}
+
+.siderbar-right a .phone-num {
+    top: 108px;
+    background-position:0px -156px;
+}
+
+.siderbar-right a:hover .phone-num {
+    width: 205px;
+    position: relative;
+    left:-205px;
+    top:-60px;
+}
+
+.siderbar-right a .qq-contact {
+    top: 162px;
+    background-position: -43px -324px;
+}
+
+.siderbar-right a:hover .qq-contact {
+    width: 163px;
+}
+
+.siderbar-right a .back-to-top {
+    top: 162px;
+    background-position: -43px -268px;
+}
+
+.siderbar-right a:hover .back-to-top {
+    width: 163px;
+    position: relative;
+    left:-160px;
+    top:-60px;
+}
+
+.panel-bottom .icon {
+    display: none;
+}
+
+.check-more .icon {
+    display: none;
+}
+.siderbar-right .app{
+    width: 53px;
+    height: 53px;
+    background-image: url(../img/5.8-l.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-color: white;
+    background-position: center;
+}
+.siderbar-right a:nth-child(2):hover .app1{
+    width: 147px;
+    height: 147px;
+    background: url(../img/5.9-l.png) no-repeat;
+    position: relative;
+    left:-140px;
+    top:-110px;
+    -webkit-transition: .2s ease width;
+    -o-transition: .2s ease width;
+    -moz-transition: .2s ease width;
+    transition: .2s ease width;
+}

@@ -144,4 +144,9 @@ $(".left-six").on({
         left()
     }
 })
-
+// 搜索框跳转
+$("#s-btn").click(()=>{
+    var val=$("#search").val()
+    var t=encodeURI(val)
+    window.location.href="search-d.html?search="+t;
+})

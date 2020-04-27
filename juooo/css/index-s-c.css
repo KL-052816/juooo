@@ -1,0 +1,79 @@
+.recommend-line .icon-left-c{
+    display: block;
+    width: 25px;
+    height: 61px;
+    position: absolute;
+    top: 110px;
+    /* z-index: 4; */
+    background: url(../img/icon-global-list.jpg)-65px -2px no-repeat;
+}
+.recommend-line .icon-right-c{
+    display: block;
+    width: 25px;
+    height: 61px;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    background: url(../img/icon-global-list.jpg)-93px -2px no-repeat;
+}
+.recommend-line .icon-left-c:hover{
+    background: url(../img/icon-global-list.jpg)-65px -131px no-repeat;
+}
+.recommend-line .icon-right-c:hover{
+    background: url(../img/icon-global-list.jpg)-93px -131px no-repeat;
+}
+.list-nav a:hover{
+    border-bottom:2px solid #80be41;
+}
+.active{
+    border-bottom:2px solid #80be41;
+}
+.recommend .recommend-line{
+    border-top:1px dashed #80be41;
+}
+.recommend-li:hover .recommend-icon{
+    border: 1px solid #80be41;
+}
+.recommend-li:hover .recommend-box{
+    border: 1px solid #80be41;
+}
+.recommend-icon i{
+    background-color: #80be41;
+}
+.icon-top{
+    background-color: #80be41;
+}
+.icon-bottom{
+    background-color: #80be41;
+}
+.img-price{
+    color: #80be41;
+    position: absolute;
+}
+.pcity-city span:hover{
+    color: #80be41;
+    border-bottom: 2px solid #80be41;
+}
+.pcity-city .active-a{
+    color: #80be41;
+    border-bottom: 2px solid #80be41;
+}
+.citys li a:hover{
+    color: #80be41;
+}
+.citys li a:hover span{
+    color: #80be41;
+}
+.picture:hover{
+    border: 1px solid #80be41;
+}
+.picture:hover p{
+    color: #80be41;
+}
+.money{
+    color: #80be41;
+}
+.more>a:hover{
+    color: #80be41;
+    border: 1px solid #80be41;
+}
