@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./fonts/glyphicons-halflings-regular.svg">
 <link rel="stylesheet" href="./css/bootstrap.min.css">
+<script src="./js/jquery.min.js"></script>
     <style>
         *{
             margin: 0;
@@ -28,6 +29,7 @@ a {
 .test{
 font-size: 25px;
 text-align: center;
+margin-top: 10px;
 }
 .warp .content1 {
     width: 540px;
@@ -43,14 +45,14 @@ background-color: white;
     float: left;
     color: black;
     transform: scale(1.5);
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .a2 {
     float: right;
     font-size: 20px;
     position: relative;
-    top: -50px;
+    top: -55px;
     color: black;
     transform: scale(2.5);
     margin-right: 10px;
@@ -158,12 +160,16 @@ font-size: 15px;
     text-align: center;
     line-height: 60px;
     color: white;
-    border-radius: 30%;
+    border-radius: 30px;
     background-color: orange;
     font-size: 20px;
-    margin: 46px;
-    position: relative;
-    top: 25px;
+    /* margin: 46px; */
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
  .warp-img2 .warp-font5{
@@ -280,12 +286,16 @@ font-size: 15px;
     width: 200px;
     height: 40px;
     background-color: orange;
-    border-radius: 20%;
+    border-radius: 20px;
     text-align: center;
     line-height: 40px;
-    position: relative;
-    top: -100px;
-    left: 160px;
+    position: absolute;
+    top: 1550px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: white;
 }
 .warp-font7{
     width: 100%;
@@ -413,4 +423,10 @@ big{
     </div>
     
 </body>
+<script>
+    $(".a2").click(function(){
+    $(".ul").slideToggle()
+   
+})
+</script>
 </html>
