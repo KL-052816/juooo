@@ -18,7 +18,6 @@ $connect=new mysqli($servername,$name,$password,$mysql);
  //检索信息
  $page=$_GET['page'];
  $start=($page)*20;
-
  $select="select * from orange  limit  {$start},20;";
 //  if($connect->query($content)){
 //      echo "成功";

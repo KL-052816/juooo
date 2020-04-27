@@ -435,6 +435,7 @@ i{
 .nav-left .nl-none li a:last-child:after{
     display: none;
 }
+/* 头部结束 */
 /* 轮播 */
 .swiper-container{
     width: 1200px;
@@ -555,7 +556,7 @@ i{
 }
 
 .siderbar-right a:hover .icon-tel-right {
-    background: #ff9244 url(../img/4.2-l.png) no-repeat center -44px;
+    background: #ff9244 url(../img/4.1-l.png) no-repeat center -44px;
 }
 
 .siderbar-right .sidebar-text {
@@ -565,7 +566,7 @@ i{
     height: 53px;
     line-height: 50px;
     text-align: right;
-    background: url(../img/4.1-l.png) 0 0 no-repeat;
+    background: url(../img/4.2-l.png) 0 0 no-repeat;
     -webkit-transition: .2s ease width;
     -o-transition: .2s ease width;
     -moz-transition: .2s ease width;

@@ -14,7 +14,7 @@ xhr.onreadystatechange=function(){
         <ul >
         <li>
             <div class="a-c-img">
-                <a href="javascript:void(0);">
+                <a href="./detail-g.html?id=${list[12].id}">
                     <i></i>
                     <img src="./img/all1.jpg" alt="">
                 </a>
@@ -37,7 +37,7 @@ xhr.onreadystatechange=function(){
         </li>
         <li>
             <div class="a-c-img">
-                <a href="./detail-g.html?id=${list[3].id}" title="${list[2].name}">
+                <a href="./detail-g.html?id=${list[2].id}" title="${list[2].name}">
                     <i></i>
                     <img src="${list[2].photo}" alt="">
                 </a>
@@ -60,7 +60,7 @@ xhr.onreadystatechange=function(){
         </li>
         <li>
             <div class="a-c-img">
-                <a href="" title="${list[16].name}">
+                <a href="./detail-g.html?id=${list[16].id}" title="${list[16].name}">
                     <i></i>
                     <img src="${list[16].photo}" alt="">
                 </a>
@@ -83,7 +83,7 @@ xhr.onreadystatechange=function(){
         </li>
         <li>
             <div class="a-c-img">
-                <a href="" title="${list[4].name}">
+                <a href="./detail-g.html?id=${list[4].id}" title="${list[4].name}">
                     <i></i>
                     <img src="${list[4].photo}" alt="">
                 </a>
@@ -112,7 +112,7 @@ xhr.onreadystatechange=function(){
         <ul>
         <li>
             <div class="a-c-img">
-                <a href="" title="${list[5].title}">
+                <a href="./detail-g.html?id=${list[5].id}" title="${list[5].title}">
                     <i></i>
                     <img src="${list[5].photo}" alt="">
                 </a>
@@ -135,7 +135,7 @@ xhr.onreadystatechange=function(){
         </li>
         <li>
             <div class="a-c-img">
-                <a href="" title="${list[0].title}">
+                <a href="./detail-g.html?id=${list[0].id}" title="${list[0].title}">
                     <img src="${list[0].photo}" alt="">
                 </a>
                 <div class="a-c-imgnone">
@@ -169,7 +169,7 @@ xhr.onreadystatechange=function(){
             $("#yyj-con").append(`
             <li>
             <div class="a-c-img">
-                <a href="" title="${yyj[i].name}">
+                <a href="./detail-g.html?id=${yyj[i].id}" title="${yyj[i].name}">
                     <i></i>
                     <img src="${yyj[i].photo}" alt="">
                 </a>
@@ -198,7 +198,7 @@ xhr.onreadystatechange=function(){
             $("#wtj-con").append(`
             <li>
             <div class="a-c-img">
-                <a href="" title="${list[i].name}">
+                <a href="./detail-g.html?id=${list[i].id}" title="${list[i].name}">
                     <i></i>
                     <img src="${list[i].photo}" alt="">
                 </a>
@@ -227,7 +227,7 @@ xhr.onreadystatechange=function(){
             $("#etj-con").append(`
             <li>
             <div class="a-c-img">
-                <a href="" title="${list[i].name}">
+                <a href="./detail-g.html?id=${list[i].id}" title="${list[i].name}">
                     <i></i>
                     <img src="${list[i].photo}" alt="">
                 </a>
@@ -256,7 +256,7 @@ xhr.onreadystatechange=function(){
             $("#yyh-con").append(`
             <li>
             <div class="a-c-img">
-                <a href="" title="${list[i].name}">
+                <a href="./detail-g.html?id=${list[i].id}" title="${list[i].name}">
                     <i></i>
                     <img src="${list[i].photo}" alt="">
                 </a>
@@ -285,7 +285,7 @@ xhr.onreadystatechange=function(){
             $("#zlxx-con").append(`
             <li>
             <div class="a-c-img">
-                <a href="" title="${list[i].name}">
+                <a href="./detail-g.html?id=${list[i].id}" title="${list[i].name}">
                     <i></i>
                     <img src="${list[i].photo}" alt="">
                 </a>
@@ -310,5 +310,5 @@ xhr.onreadystatechange=function(){
         }
     }
 }
-xhr.open('get','http://localhost:80/juooo/php/index-d.php',true)
+xhr.open('get','http://localhost/juooo/php/index-d.php',true)
 xhr.send();

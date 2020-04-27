@@ -61,3 +61,9 @@ $(".show-sixed").mouseenter(function(){
 $(".show-sixed").mouseleave(function(){
     $(".show-sixed-1").hide()
 })
+function jump(id){
+    window.location.href="./detail-g.html?id="+id
+}
+$(".jump-m-c").click(()=>{
+    window.location.href="./concert-g.html"
+})

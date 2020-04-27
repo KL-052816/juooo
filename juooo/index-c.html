@@ -192,11 +192,11 @@
                 <div class="header-bottom-bottom">
                     <div class="all-shop"><a href="index.html">全部商品分类</a></div>
                     <ul class="nav-list">
-                        <li><a href="./index-c.html">流行音乐</a></li>
-                        <li><a href="./index-c.html">古典音乐</a></li>
+                        <li><a href="./index-m-c.html">流行音乐</a></li>
+                        <li><a href="./index-g-c.html">古典音乐</a></li>
                         <li><a href="./index-c.html">舞台剧</a></li>
-                        <li><a href="./index-c.html">儿童亲子</a></li>
-                        <li><a href="../聚橙网12/music.html">音乐剧</a></li>
+                        <li><a href="./index-s-c.html">儿童亲子</a></li>
+                        <li><a href="./music.html">音乐剧</a></li>
                         <li><a href="./vip-g.html">VIP+专区</a></li>
                     </ul>
                     <!-- 欢聚橙卡 -->
@@ -292,9 +292,9 @@
             <div class="w1204">
                 <a href="#" class="active" target="">演出首页<b class="linb"></b></a>
                 <a href="./concert-g.html"  target="">演出列表<b class="linb"></b></a>
-                <a href="../聚橙网12/news.html"  target="">流行资讯<b class="linb"></b></a>
-                <a href="#"  target="">演出日历<b class="linb"></b></a>
-                <a href="#"  target="">热门专题<b class="linb"></b></a>
+                <a href="./news.html"  target="">流行资讯<b class="linb"></b></a>
+                <a href="./calendar.html"  target="">演出日历<b class="linb"></b></a>
+                <a href="./special.html"  target="">热门专题<b class="linb"></b></a>
             </div>
         </div>
         <script src="./js/swiper-3.4.2.min.js"></script>
@@ -340,7 +340,7 @@
             <p class="recommend-p">推荐演出</p>
             <div class="recommend-line">
                 <ul class="recommend-ul">
-                    <li class="recommend-li">
+                    <li class="recommend-li"  onclick="jump(45)">
                         <i class="recommend-icon"><i></i></i>
                         <p class="recommend-time">06月26日</p>
                         <div class="recommend-bg">
@@ -450,7 +450,7 @@
                             cont.innerHTML=""
                             for(var i=0; i<conts.length; i++) {
                                 cont.innerHTML+=`
-                                    <div class="picture">
+                                    <div class="picture"  onclick="jump(${conts[i].id})">
                                         <img src="${conts[i].photo}" alt="">
                                         <p class="p1">${conts[i].city}${conts[i].name}</p>
                                         <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
@@ -459,7 +459,7 @@
                             }  
                         }
                     }
-                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city+'&type='+type, true);
+                    xhr.open('GET','http://localhost/juooo/php/index-c.php?city='+city+'&type='+type, true);
                     xhr.send(); 
                 }              
                 var cont=document.getElementById("box1")
@@ -471,7 +471,7 @@
                             console.log(conts);
                                 for(var i=0; i<conts.length; i++) {
                                     cont.innerHTML+=`
-                                        <div class="picture">
+                                        <div class="picture"  onclick="jump(${conts[i].id})">
                                             <img src="${conts[i].photo}" alt="">
                                             <p class="p1">${conts[i].city}${conts[i].name}</p>
                                             <span class="money">${conts[i].price.split("-")[0]}</span><span class="qi">起</span> <span class="time">${conts[i].time}</span>
@@ -480,7 +480,7 @@
                                 }  
                         }
                     }
-                    xhr.open('GET','http://localhost/juooo/juooo/php/index-c.php?city='+city+'&type='+type, true);
+                    xhr.open('GET','http://localhost/juooo/php/index-c.php?city='+city+'&type='+type, true);
                     xhr.send(); 
             }
             </script>
@@ -496,11 +496,11 @@
                         <li>
                              <div>帮助中心</div>                       
                              <ul class="help">
-                                 <li><a href="">新手指南</a></li>
-                                 <li><a href="">支付方式</a></li>
-                                 <li><a href="">售后服务</a></li>
-                                 <li><a href="">购票指南</a></li>
-                                 <li><a href="">配送方式</a></li>
+                                 <li><a href="index-reg.html">新手指南</a></li>
+                                 <li><a href="index-pay-d.html">支付方式</a></li>
+                                 <li><a href="index-Aftersale-d.html">售后服务</a></li>
+                                 <li><a href="index-TicketingGuide-d.html">购票指南</a></li>
+                                 <li><a href="index-Delivery-d.html">配送方式</a></li>
                              </ul>
                         </li>
                         <li>
@@ -535,14 +535,14 @@
                     </div>
                     <div class="fb-two">
                         <ul>
-                            <li><a href="">关于我们</a></li>
-                            <li><a href="">联系我们</a></li>
-                            <li><a href="">服务条款</a></li>
-                            <li><a href="">加入我们</a></li>
-                            <li><a href="">媒体报道</a></li>
-                            <li><a href="">合作伙伴</a></li>
-                            <li><a href="">友情链接</a></li>
-                            <li><a href="">网站地图</a></li>
+                            <li><a href="index-d/index-about.html">关于我们</a></li>
+                            <li><a href="index-d/index-contact-d.html">联系我们</a></li>
+                            <li><a href="index-d/index-service-d.html">服务条款</a></li>
+                            <li><a href="index-d/index-join-d.html">加入我们</a></li>
+                            <li><a href="./news.html">媒体报道</a></li>
+                            <li><a href="index-d/index-partner-d.html">合作伙伴</a></li>
+                            <li><a href="index-d/index-links-d.html">友情链接</a></li>
+                            <li><a href="index-d/index-map-d.html">网站地图</a></li>
                         </ul>
                     </div>
                     <div class="fb-three">
@@ -582,7 +582,5 @@
     </div>
     <!-- 右侧结束 -->
     <script src="./js/index-show-c.js"></script>
-    
-    
 </body>
 </html>

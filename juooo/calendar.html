@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset-l.css">
+    <link rel="stylesheet" href="css/index-top-l.css">
+    <link rel="stylesheet" href="font-l/iconfont.css">
+    <link rel="stylesheet" href="css/calendar-l.css">
+    <link rel="stylesheet" href="css/index-footer-l.css">
+</head>
+  <!-- 引入js -->
+  <script src="js/jquery.min-l.js"></script>
+<body>
+       <!-- 头部 -->
+       <div class="header">
+        <div class="header-top">
+            <div class="heart">
+                <div class="left">汇聚每一个感动</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href=""><i></i>手机购票</a>
+                            <div class="mobile">
+                            <img src="img/3.9-l.png" alt="">
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="heart">
+                <div class="header-bottom-top">
+                    <!-- logo -->
+                    <div class="logo"><a href=""></a></div>
+                    <!-- 全国 -->
+                    <div>
+                        <div class="all">
+                            <span>全国</span>
+                            <i></i>
+                            <!-- 隐藏块 -->
+                            <div id="a-display">
+                                <div class="a-title">
+                                    <span>全国</span>
+                                    <i></i>
+                                    <p>当前全国共有<span>1102</span>场演出，城市后数字代表演出场次</p>
+                                    <i class="a-close"></i>
+                                </div>
+                                <div>
+                                    <!-- 地区列表 -->
+                                    <ul>
+                                    <li>
+                                        <span>全    国</span>
+                                        <div>
+                                            <a href="">全国<span>(1102)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华南地区</span>
+                                        <div>
+                                            <a href="">深圳<span>(212)</span></a>
+                                            <a href="">广州<span>(1102)</span></a>
+                                            <a href="">香港<span>(1102)</span></a>
+                                            <a href="">佛山<span>(1102)</span></a>
+                                            <a href="">澳门<span>(1102)</span></a>
+                                            <a href="">福州<span>(1102)</span></a>
+                                            <a href="">泉州<span>(1102)</span></a>
+                                            <a href="">厦门<span>(1102)</span></a>
+                                            <a href="">台北<span>(1102)</span></a>
+                                            <a href="">福建<span>(1102)</span></a>
+                                            <a href="">陵水<span>(1102)</span></a>
+                                            <a href="">桂林<span>(1102)</span></a>
+                                            <a href="">郴州<span>(1102)</span></a>
+                                            <a href="">钦州<span>(1102)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华东地区</span>
+                                        <div>
+                                            <a href="">上海<span>(262)</span></a>
+                                            <a href="">杭州<span>(75)</span></a>
+                                            <a href="">苏州<span>(6)</span></a>
+                                            <a href="">宁波<span>(19)</span></a>
+                                            <a href="">南京<span>(11)</span></a>
+                                            <a href="">合肥<span>(12)</span></a>
+                                            <a href="">济南<span>(19)</span></a>
+                                            <a href="">无锡<span>(18)</span></a>
+                                            <a href="">常州<span>(1)</span></a>
+                                            <a href="">舟山<span>(7)</span></a>
+                                            <a href="">绍兴<span>(0)</span></a>
+                                            <a href="">金华<span>(1)</span></a>
+                                            <a href="">赣州<span>(0)</span></a>
+                                            <a href="">德州<span>(0)</span></a>
+                                            <a href="">南平<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华北地区</span>
+                                        <div>
+                                            <a href="">北京<span>(66)</span></a>
+                                            <a href="">石家庄<span>(46)</span></a>
+                                            <a href="">天津<span>(9)</span></a>
+                                            <a href="">太原<span>(1)</span></a>
+                                            <a href="">廊坊<span>(20)</span></a>
+                                            <a href="">兴安盟<span>(12)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>西南地区</span>
+                                        <div>
+                                            <a href="">成都<span>(36)</span></a>
+                                            <a href="">重庆<span>(28)</span></a>
+                                            <a href="">昆明<span>(0)</span></a>
+                                            <a href="">贵阳<span>(20)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>华中地区</span>
+                                        <div>
+                                            <a href="">长沙<span>(5)</span></a>
+                                            <a href="">武汉<span>(15)</span></a>
+                                            <a href="">岳阳<span>(0)</span></a>
+                                            <a href="">郑州<span>(13)</span></a>
+                                            <a href="">宜昌<span>(21)</span></a>
+                                            <a href="">随州<span>(0)</span></a>
+                                            <a href="">信阳<span>(0)</span></a>
+                                            <a href="">咸宁<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>东北地区</span>
+                                        <div>
+                                            <a href="">大庆<span>(0)</span></a>
+                                            <a href="">沈阳<span>(6)</span></a>
+                                            <a href="">哈尔滨<span>(7)</span></a>
+                                            <a href="">长春<span>(0)</span></a>
+                                            <a href="">营口<span>(0)</span></a>
+                                            <a href="">吉林<span>(0)</span></a>
+                                            <a href="">抚顺<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>西北地区</span>
+                                        <div>
+                                            <a href="">西安<span>(11)</span></a>
+                                            <a href="">西宁<span>(0)</span></a>
+                                            <a href="">昌吉<span>(0)</span></a>
+                                            <a href="">延安<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>海外地区</span>
+                                        <div>
+                                            <a href="">新加坡<span>(1)</span></a>
+                                            <a href="">马来西亚<span>(0)</span></a>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="all-bottom">
+                            <a href="">
+                                <i></i>
+                                推荐全国站
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 搜索 -->
+                    <div class="search">
+                        <div class="s-input">
+                            <input type="text" placeholder="冰雪奇缘">
+                            <div id="s-btn"><i></i></div>
+                        </div>
+                        <div class="s-list">
+                            <ul>
+                                <li><a href="">冰雪奇缘</a></li>
+                                <li><a href="">第一次约会</a></li>
+                                <li><a href="">摇滚红与黑</a></li>
+                                <li><a href="">魔女宅急便</a></li>
+                                <li><a href="">咖啡因</a></li>
+                                <li><a href="">猫CATS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 头部导航 -->
+                <div class="header-bottom-bottom">
+                    
+                    <div href="index.html" class="shop">全部商品分类
+                         <div class="nav-left">
+                            <a href=""><i class="nlbg1"></i><span>演唱会</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>音乐会</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>话剧歌剧</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>儿童亲子</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>音乐剧</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>戏曲综艺</span><i class="nlbg2"></i></a>
+                            <a href=""><i class="nlbg1"></i><span>展览</span><i class="nlbg2"></i></a> 
+                            <!-- 左侧导航隐藏块 -->
+                            <div class="nl-none">
+                                <ul>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">流行</a>
+                                            <a href="">摇滚</a>
+                                            <a href="">民谣</a>
+                                            <a href="">民族</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">交响</a>
+                                            <a href="">独奏</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">话剧</a>
+                                            <a href="">歌剧</a>
+                                            <a href="">歌舞剧</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">儿童剧</a>
+                                            <a href="">亲子活动</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">音乐剧</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">京剧</a>
+                                            <a href="">昆曲</a>
+                                            <a href="">越剧</a>
+                                            <a href="">相声小品</a>
+                                            <a href="">综艺</a>
+                                            <a href="">马戏杂耍</a>
+                                            
+                                        </div>
+                                        <div class="nln-r">
+                                            <a href="">其他</a>
+                                            <a href="">演讲</a>
+                                            <a href="">体育</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nln-l">
+                                            <a href="">展览</a>
+                                            <a href="">其他</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="">流行音乐</a></li>
+                        <li><a href="">古典音乐</a></li>
+                        <li><a href="">舞台剧</a></li>
+                        <li><a href="">儿童亲子</a></li>
+                        <li><a href="">音乐剧</a></li>
+                        <li><a href="">VIP+专区</a></li>
+                    </ul>
+                    <!-- 欢聚橙卡 -->
+                    <div class="nav-right">
+                        <a href="">
+                            <img src="img/3.6-l.gif" alt="">
+                        </a>
+                    </div>
+                    <!-- 左侧导航 -->                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 开始写日历页面 -->
+     <div class="rili">
+        <div class="banner">
+            <div class="ban-top clearfix">
+                <div class="bt-right">
+                    <a href="javascript:;" class="quang" id="dian">全国</a>
+                    <div class="chengshi">
+                        <ul>
+                            <!-- 全国 -->
+                            <li class="clearfix">
+                                <span class="daress-name">全国</span>
+                                <div class="city-name">
+                                    <a href="javscript:;">全国</a>
+                                </div>
+                            </li>
+                            <!-- 华南地区 -->
+                            <li>
+                                <span class="daress-name">华南地区</span>
+                                <div class="city-name">
+                                    <a href="javascript:;">深圳</a>
+                                    <a href="javascript:;">广州</a>
+                                    <a href="javascript:;">南宁</a>
+                                    <a href="javascript:;">福州</a>
+                                    <a href="javascript:;">泉州</a>
+                                    <a href="javascript:;">厦门</a>
+                                    <a href="javascript:;">东莞</a>
+                                    <a href="javascript:;">附件</a>
+                                    <a href="javascript:;">阳江</a>
+                                    <a href="javascript:;">清远</a>
+                                    <a href="javascript:;">桂林</a>
+                                    <a href="javascript:;">河源</a>
+                                    <a href="javascript:;">梅州</a>
+                                    <a href="javascript:;">罗城</a>
+                                    <a href="javascript:;">宜州</a>
+                                    <a href="javascript:;">郴州</a>
+                                    <a href="javascript:;">河池</a>
+                                    <a href="javascript:;">衡阳</a>
+                                    <a href="javascript:;">玉林</a>
+                                    <a href="javascript:;">梧州</a>
+                                </div>
+                            </li>
+                            <!-- 华东地区 -->
+                            <li>
+                                <span class="daress-name">华东地区</span>
+                                <div class="city-name">
+                                    <a href="javascript:;">上海</a>
+                                    <a href="javascript:;">杭州</a>
+                                    <a href="javascript:;">苏州</a>
+                                    <a href="javascript:;">连云港</a>
+                                    <a href="javascript:;">宁波</a>
+                                    <a href="javascript:;">镇江</a>
+                                    <a href="javascript:;">南京</a>
+                                    <a href="javascript:;">合肥</a>
+                                    <a href="javascript:;">济南</a>
+                                    <a href="javascript:;">无锡</a>
+                                    <a href="javascript:;">常州</a>
+                                    <a href="javascript:;">金华</a>
+                                    <a href="javascript:;">盐城</a>
+                                    <a href="javascript:;">滨州</a>
+                                    <a href="javascript:;">德州</a>
+                                    <a href="javascript:;">肥东县</a>
+                                    <a href="javascript:;">菏泽</a>
+                                </div>
+                            </li>
+                            <!-- 华北地区 -->
+                            <li>
+                                <span class="daress-name">华北地区</span>
+                                <div class="city-name">
+                                    <a href="javascript:;">北京</a>
+                                    <a href="javascript:;">大连</a>
+                                    <a href="javascript:;">石家庄</a>
+                                    <a href="javascript:;">天津</a>
+                                    <a href="javascript:;">太原</a>
+                                    <a href="javascript:;">包头</a>
+                                    <a href="javascript:;">沈阳</a>
+                                    <a href="javascript:;">哈尔滨</a>
+                                    <a href="javascript:;">廊坊</a>
+                                    <a href="javascript:;">乌兰浩特</a>
+                                    <a href="javascript:;">大同</a>
+                                </div>
+                            </li>
+                            <!-- 西南地区 -->
+                            <li>
+                                <span class="daress-name">西南地区</span>
+                                <div class="city-name">
+                                    <a href="javascript:;">成都</a>
+                                    <a href="javascript:;">重庆</a>
+                                    <a href="javascript:;">昆明</a>
+                                    <a href="javascript:;">桂阳</a>
+                                    <a href="javascript:;">安顺</a>
+                                    <a href="javascript:;">龙岩</a>
+                                </div>
+                            </li>
+                            <!-- 华中地区 -->
+                            <li>
+                                <span class="daress-name">华中地区</span>
+                                <div class="city-name">
+                                    <a href="javascript:;">长沙</a>
+                                    <a href="javascript:;">武汉</a>
+                                    <a href="javascript:;">郑州</a>
+                                    <a href="javascript:;">株洲</a>
+                                    <a href="javascript:;">宜昌</a>
+                                    <a href="javascript:;">商丘</a>
+                                    <a href="javascript:;">随州</a>
+                                    <a href="javascript:;">信仰</a>
+                                    <a href="javascript:;">浏阳</a>
+                                    <a href="javascript:;">荆门</a>
+                                </div>
+                            </li>
+                            <!-- 其他 -->
+                            <li>
+                                <span class="daress-name">其他</span>
+                                <div class="city-name">
+                                    <a href="javascript:;">香港</a>
+                                    <a href="javascript:;">澳门</a>
+                                    <a href="javascript:;">莆田</a>
+                                    <a href="javascript:;">黄山</a>
+                                    <a href="javascript:;">日本</a>
+                                </div>
+                            </li>
+                            <!-- 西北地区 -->
+                            <li>
+                                <span class="daress-name">西北地区</span>
+                                <div class="city-name">
+                                    <a href="javascript:;">西安</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bt-left">
+                    <a href="jvascript:;" class="prev"></a>
+                    <span class="text">
+                        <span class="year">2020</span>年
+                        <span class="month">04</span>月
+                    </span>
+                    <a href="javascript:;" class="next"></a>
+                </div>
+            </div>
+            <div class="liebiao clearfix">
+                <ul class="lie-ul">
+                    <li class="active">
+                        <a href="javascript:;" class="tabhuan">
+                            <span>全部演出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="tabhuan">
+                            <span>流行音乐</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="tabhuan">
+                            <span>古典音乐</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="tabhuan">
+                            <span>舞台剧</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="tabhuan">
+                            <span>儿童亲子</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <a href="javascript:;" class="hui">[ 回到今天 ]</a>
+            </div>
+            <div class="head">
+                <span class="td sunday">日</span>
+                <span class="td">一</span>
+                <span class="td">二</span>
+                <span class="td">三</span>
+                <span class="td">四</span>
+                <span class="td">五</span>
+                <span class="td">六</span>
+            </div>
+
+            <div class="container">
+
+            </div>          
+        </div>
+         <!-- 下面的菜单 -->
+         <div class="caidan">
+            <div class="show-list">
+                <div class="it-title">2020.4.24　共有10场演出(主办演出2场)</div>
+                <div class="cai-lie">
+                    <ul class="cai-dan">
+                        <li class="cai-li clearfix">
+                            <div class="d-img">
+                                <a href="">
+                                    <img src="./img/6.3-l.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="d-info">
+                                <h3>
+                                    <a href="javascript:;">[哈尔滨] 【演出取消】“猫和老鼠的古典乐”趣味视听互动音乐会-哈尔滨站</a>
+                                </h3>
+                                <div class="d-nei">
+                                    <p>时 间：2020.04.24 19:00</p>
+                                    <p>场 馆： 哈尔滨国际会展体育中心环球剧场小剧场</p>
+                                    <p>
+                                        <span>票 价：</span>
+                                        <span class="d-se">￥</span>
+                                        <span class="d-se da">80~280</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-shou">
+                                <a href="javascript:;">立即购买</a>
+                                <p>售票中</p>
+                            </div>
+                        </li>
+
+                        <li class="cai-li clearfix">
+                            <div class="d-img">
+                                <a href="">
+                                    <img src="./img/6.4-l.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="d-info">
+                                <h3>
+                                    <a href="javascript:;">[北京] （演出取消）聚橙出品|百老汇现象级原版音乐剧《来自远方》-北京站</a>
+                                </h3>
+                                <div class="d-nei">
+                                    <p>时 间：2020.04.24 19:30</p>
+                                    <p>场 馆： 天桥艺术中心-大剧场</p>
+                                    <p>
+                                        <span>票 价：</span>
+                                        <span class="d-se">￥</span>
+                                        <span class="d-se da">99~1080</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-shou">
+                                <a href="javascript:;">立即购买</a>
+                                <p>售票中</p>
+                            </div>
+                        </li>
+
+                        <li class="cai-li clearfix">
+                            <div class="d-img">
+                                <a href="">
+                                    <img src="./img/6.5-l.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="d-info">
+                                <h3>
+                                    <a href="javascript:;">[上海] 开心麻花爆笑舞台剧《牢友记》-上海站</a>
+                                </h3>
+                                <div class="d-nei">
+                                    <p>时 间：2020.04.24 19:30</p>
+                                    <p>场 馆： 人民大舞台</p>
+                                    <p>
+                                        <span>票 价：</span>
+                                        <span class="d-se">￥</span>
+                                        <span class="d-se da">180~1180</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-shou">
+                                <a href="javascript:;">立即购买</a>
+                                <p>售票中</p>
+                            </div>
+                        </li>
+
+                        <li class="cai-li clearfix">
+                            <div class="d-img">
+                                <a href="">
+                                    <img src="./img/6.6-l.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="d-info">
+                                <h3>
+                                    <a href="javascript:;">[杭州] 百老汇互动亲子科学剧《化学秀》中文版-杭州站</a>
+                                </h3>
+                                <div class="d-nei">
+                                    <p>时 间：2020.04.24 19:30</p>
+                                    <p>场 馆： 浙话艺术剧院</p>
+                                    <p>
+                                        <span>票 价：</span>
+                                        <span class="d-se">￥</span>
+                                        <span class="d-se da">80~380</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-shou">
+                                <a href="javascript:;">立即购买</a>
+                                <p>售票中</p>
+                            </div>
+                        </li>
+
+                        <li class="cai-li clearfix">
+                            <div class="d-img">
+                                <a href="">
+                                    <img src="./img/6.7-l.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="d-info">
+                                <h3>
+                                    <a href="javascript:;">[青岛] 法国艺术启蒙魔术剧《美术馆奇妙夜 星夜》-青岛站</a>
+                                </h3>
+                                <div class="d-nei">
+                                    <p>时 间：2020.04.24 19.30</p>
+                                    <p>场 馆： 青岛广电影视剧场</p>
+                                    <p>
+                                        <span>票 价：</span>
+                                        <span class="d-se">￥</span>
+                                        <span class="d-se da">180~480</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-shou">
+                                <a href="javascript:;">立即购买</a>
+                                <p>售票中</p>
+                            </div>
+                        </li>
+                        <li class="cai-li clearfix">
+                            <div class="d-img">
+                                <a href="">
+                                    <img src="./img/6.8-l.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="d-info">
+                                <h3>
+                                    <a href="javascript:;">[南京] （演出延期）Mailive x大船文化 大型魔幻惊悚话剧《盗墓笔记：蛇沼鬼城》-南京站</a>
+                                </h3>
+                                <div class="d-nei">
+                                    <p>时 间：2020.04.24 19:30</p>
+                                    <p>场 馆： 江苏荔枝大剧院</p>
+                                    <p>
+                                        <span>票 价：</span>
+                                        <span class="d-se">￥</span>
+                                        <span class="d-se da">180~880</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-shou">
+                                <a href="javascript:;">立即购买</a>
+                                <p>售票中</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- 底部 -->
+      <div class="footer">
+        <!-- 上部 -->
+        <div class="f-white">
+            <div class="heart">
+                <div class="f-top">
+                    <ul>
+                        <li>
+                             <div>帮助中心</div>                       
+                             <ul class="help">
+                                 <li><a href="">新手指南</a></li>
+                                 <li><a href="">支付方式</a></li>
+                                 <li><a href="">售后服务</a></li>
+                                 <li><a href="">购票指南</a></li>
+                                 <li><a href="">配送方式</a></li>
+                             </ul>
+                        </li>
+                        <li>
+                            <div class="tel">400-185-8666</div>
+                            <div class="time">周一至周五： 08:30-20:00</div>
+                            <div class="time">周　　　末： 08:30-18:00</div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="ticket"><img src="./img/4.4-l.png" alt="">
+                                    <p>聚橙票务</p>
+                                </div>
+                                <div class="show">
+                                    <img src="./img/4.3-l.png" alt="">
+                                    <p>聚橙演艺</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 下部 -->
+        <div class="f-gray">
+            <div class="heart">
+                <div class="f-bottom">
+                    <div class="fb-one">
+                        <p>聚橙旗下子品牌：</p>
+                        <a href="">小橙堡</a>
+                        <a href="">万有音乐系</a>
+                        <a href="">聚橙音乐剧</a>
+                    </div>
+                    <div class="fb-two">
+                        <ul>
+                            <li><a href="">关于我们</a></li>
+                            <li><a href="">联系我们</a></li>
+                            <li><a href="">服务条款</a></li>
+                            <li><a href="">加入我们</a></li>
+                            <li><a href="">媒体报道</a></li>
+                            <li><a href="">合作伙伴</a></li>
+                            <li><a href="">友情链接</a></li>
+                            <li><a href="">网站地图</a></li>
+                        </ul>
+                    </div>
+                    <div class="fb-three">
+                        <span>Copyright 2007-2020 © 深圳市聚橙演艺联盟票务有限公司 | <a href="">粤ICP备17063893号-2</a></span>
+                        <span>粤公网安备 44030502000578号</span>
+                    </div>
+                    <div class="fb-four">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- 右侧导航 -->
+    <div class="siderbar-right" id="js-head-logo">
+        <a id="juo-meiqia">
+            <span class="sidebar-icon icon-tel-right"></span>
+            <div class="sidebar-text tel-num"></div>
+        </a>
+        <a href="">
+            <span class="app"></span>
+            <div class="app1"></div>
+        </a>
+        <a class="js-weixin-icon">
+            <span class="sidebar-icon iconfont">&#xe695;</span>
+            <div class="sidebar-text weixin-num"></div>
+        </a>
+        <a>
+            <span class="sidebar-icon iconfont">&#xe631;</span>
+            <div class="sidebar-text phone-num"></div>
+        </a>
+        <a id="js-top">
+            <span class="sidebar-icon iconfont">&#xe74a;</span>
+            <div class="sidebar-text back-to-top"></div>
+        </a>
+
+    </div>
+    <script src="js/index-top-l.js"></script>
+    <script src="js/calendar-l.js"></script>
+</body>
+</html>

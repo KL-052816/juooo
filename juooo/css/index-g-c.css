@@ -1,0 +1,113 @@
+
+.recommend .recommend-li2{
+    top: -265px;
+    left: 290px;
+}
+.recommend .recommend-li3{
+    top: -527px;
+    left: 585px;
+}
+/* 演出场馆内容 */
+.restaurant-all{
+    background: #fafafa;
+    padding: 40px 0px 200px 0px;
+}
+.restaurant-p{
+    position: relative;
+}
+.restaurant{
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    bottom: 0px;
+    right: 8px;
+}
+.restaurant:hover{
+    color: #f96c02;
+}
+.restaurants{
+    margin-top: 40px;
+}
+.restaurants li{
+    float: left;
+    width: 146px;
+    height: 146px;
+    border: 1px solid #eee;
+    margin-left: 29px;
+}
+.restaurants li:first-child{
+    margin-left: 0px;
+}
+.restaurants li img{
+    width: 100%;
+    height: 100%;
+}
+.restaurants li p{
+    position: relative;
+    top: -27px;
+    width: 100%;
+    height: 27px;
+    color: #fff;
+    line-height: 27px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.4);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.list-nav a:hover{
+    border-bottom:2px solid #3f93b7;
+}
+.active{
+    border-bottom:2px solid #3f93b7;
+}
+.recommend .recommend-line{
+    border-top:1px dashed #3f93b7;
+}
+.recommend-li:hover .recommend-icon{
+    border: 1px solid #3f93b7;
+}
+.recommend-li:hover .recommend-box{
+    border: 1px solid #3f93b7;
+}
+.recommend-icon i{
+    background-color: #3f93b7;
+}
+.icon-top{
+    background-color: #3f93b7;
+}
+.icon-bottom{
+    background-color: #3f93b7;
+}
+.img-price{
+    color: #3f93b7;
+    position: absolute;
+}
+.pcity-city span:hover{
+    color: #3f93b7;
+    border-bottom: 2px solid #3f93b7;
+}
+.pcity-city .active-a{
+    color: #3f93b7;
+    border-bottom: 2px solid #3f93b7;
+}
+.citys li a:hover{
+    color: #3f93b7;
+}
+.citys li a:hover span{
+    color: #3f93b7;
+}
+.picture:hover{
+    border: 1px solid #3f93b7;
+}
+.picture:hover p{
+    color: #3f93b7;
+}
+.money{
+    color: #3f93b7;
+}
+.more>a:hover{
+    color: #3f93b7;
+    border: 1px solid #3f93b7;
+}
