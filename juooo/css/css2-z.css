@@ -653,3 +653,10 @@ font-size: 17px;
 .content17 ul li:first-child{
     color: red;
 }
+.bag:hover{
+text-decoration: none;
+color: black;
+}
+.bag{
+    color: black;
+}

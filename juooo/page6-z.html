@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/glyphicons-halflings-regular.svg">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<script src="./js/jquery.min.js"></script>
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        .warp {
+    width: 540px;
+    height:auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+a {
+    text-decoration: none;
+}
+
+.test{
+font-size: 25px;
+text-align: center;
+margin-top: 10px;
+}
+.warp .content1 {
+    width: 540px;
+    height:59px;
+border: 1px solid #ebebeb;
+position: fixed;
+top: 0;
+z-index: 999;
+background-color: white;
+}
+
+.a1 {
+    float: left;
+    color: black;
+    transform: scale(1.5);
+    margin-top: 20px;
+}
+
+.a2 {
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: -55px;
+    color: black;
+    transform: scale(2.5);
+    margin-right: 10px;
+}
+.ul{
+    width: 160px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 47px;
+    right: 0;
+    font-size: 20px;
+    padding-top: 10px;
+   
+}
+.ul li{
+    margin-top: 14px;
+    margin-left: 16px;
+}
+.a1:hover {
+    text-decoration: none;
+}
+
+.a2:hover {
+    text-decoration: none;
+}
+.warp .content2{
+    width: 100%;
+    height: 450px;
+    background-color: rgba(80, 80, 80, .3);
+  
+   
+}
+.warp .content2 .content3{
+    width: 464px;
+    height: 245px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -320px;
+    margin: auto;
+    border-radius: 10%;
+    color: white;
+}
+.warp .content2 .content3 p{
+    font-size: 30px;
+    padding: 30px 30px;
+}
+.warp .content2 .content3 p small{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 25px;
+    }
+    .warp .content2 .content3 .spn1{
+        position: absolute;
+        bottom: 10px;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .warp .content2 .content3 .spn2{
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        font-size: 20px;
+        margin-right: 30px;
+    }
+    .warp .content2 .p1{
+        display: block;
+    width: 270px;
+    height:50px;
+font-size: 20px;
+background-color: orangered;
+position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10px;
+    margin: auto;
+    text-align:center ;
+    color: white;
+    line-height: 50px;
+    border-radius: 30px;
+    }
+    .warp .content2 .p2{
+        display: block;
+    width: 270px;
+    height:50px;
+font-size: 19px;
+
+position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 130px;
+    margin: auto;
+    text-align:center ;
+    }
+    .warp .content2 .p2 small{
+        text-decoration: underline;
+    }
+    .warp .content4{
+        width: 540px;
+height:59px;
+border: 1px solid #ebebeb;
+position: fixed;
+bottom: 0;
+z-index: 999;
+background-color: orangered;
+
+    text-align:center ;
+    color: white;
+    line-height: 59px;
+   font-size: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+    .warp .content5{
+width: 500px;
+height:400px;
+    }
+    .content5 .left{
+        float: left;
+    }
+    .content5 p{
+      position: relative;
+      left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+    }
+    .warp .content6{
+width: 500px;
+height:400px;
+    }
+    .content6 .left{
+        float: left;
+    }
+    .content6 p{
+      position: relative;
+      left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+    }
+    .warp .content7{
+width: 500px;
+height:400px;
+    }
+    .content7 .left{
+        float: left;
+    }
+    .content7 p{
+      position: relative;
+      left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+    }
+    .warp .content8{
+width: 500px;
+height:400px;
+    }
+    .content8 .left{
+        float: left;
+    }
+    .content8 p{
+      position: relative;
+      left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+    }
+    .warp .content9{
+width: 500px;
+height:400px;
+    }
+    .content9 .left{
+        float: left;
+    }
+    .content9 p{
+      position: relative;
+      left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+    }
+    .warp .content10{
+width: 500px;
+height:400px;
+    }
+    .content10 .left{
+        float: left;
+    }
+    .content10 p{
+      position: relative;
+      left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+    }
+    .warp .content11{
+width: 500px;
+height:400px;
+    }
+    .content11 .left{
+        float: left;
+    }
+    .content11 p{
+      position: relative;
+      left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="content1">
+            <a href="./index1-z.html" class="a1 glyphicon glyphicon-menu-left " aria-hidden="true">
+            </a>
+            <p class="test">兴安盟文旅惠民卡<p>
+                <span class="a2 ">...</span>
+                   
+                <ul class="ul" style="display: none;">
+                    <li class="glyphicon glyphicon-home"> <a  href="index.html" >主页</a></li>
+                    <li class="glyphicon glyphicon-user "  aria-hidden="true"> <a  href="logn-z.html" >我的聚橙</a></li>
+                </ul>
+                </div>
+    <div class="content2">
+<div class="content3">
+    <p>兴安盟文旅惠民卡<small>次卡</small></p>
+    <span class="spn1">￥199</span>
+    <span class="spn2">有效期:6个月</span>
+
+</div>
+<p class="p1">立即购卡</p>
+<p class="p2">6张兑换券 <small>使用规则</small></p>
+    </div>
+    <div class="content4">
+        <p>立即购卡</p>
+    </div>
+    <h2>演出兑换</h2>
+    
+    <div class="content5">
+        <img class="left" src="./img/11-z.png" alt="">
+    <p>2020.05.08-05.4</p>
+    <p>【演出延期】聚橙出品 | 百老汇现象级原版音乐剧《来自远方》-上海站</p>
+        <p>上海 | 上汽·上海文化广场</p>
+       <p style="color: orange;">1兑1<span style="color: gray;">起</span></p>
+
+
+    </div>
+    <div class="content6">
+        <img class="left" src="./img/12-z.png" alt="">
+    <p>2020.06.19-06.28</p>
+    <p>聚橙制作 | 外百老汇怦然心动恋爱音乐剧《长腿叔叔》-上海站</p>
+        <p>上海 | 上汽橙剧场·可当代艺术中心</p>
+       <p style="color: orange;">1兑1<span style="color: gray;">起</span></p>
+
+
+    </div>
+    <div class="content7">
+        <img class="left" src="./img/13-z.png" alt="">
+    <p>2020.06.19-06.28</p>
+    <p>聚橙制作 | 外百老汇怦然心动恋爱音乐剧《长腿叔叔》-上海站</p>
+        <p>上海 | 上汽橙剧场·可当代艺术中心</p>
+       <p style="color: orange;">1兑1<span style="color: gray;">起</span></p>
+
+
+    </div>
+    <div class="content8">
+        <img class="left" src="./img/14-z.png" alt="">
+    <p>2020.06.19-06.28</p>
+    <p>聚橙制作 | 外百老汇怦然心动恋爱音乐剧《长腿叔叔》-上海站</p>
+        <p>上海 | 上汽橙剧场·可当代艺术中心</p>
+       <p style="color: orange;">1兑1<span style="color: gray;">起</span></p>
+
+
+    </div>
+    <div class="content9">
+        <img class="left" src="./img/15-z.png" alt="">
+    <p>2020.06.19-06.28</p>
+    <p>聚橙制作 | 外百老汇怦然心动恋爱音乐剧《长腿叔叔》-上海站</p>
+        <p>上海 | 上汽橙剧场·可当代艺术中心</p>
+       <p style="color: orange;">1兑1<span style="color: gray;">起</span></p>
+
+
+    </div>
+    <div class="content10">
+        <img class="left" src="./img/16-z.png" alt="">
+    <p>2020.06.19-06.28</p>
+    <p>聚橙制作 | 外百老汇怦然心动恋爱音乐剧《长腿叔叔》-上海站</p>
+        <p>上海 | 上汽橙剧场·可当代艺术中心</p>
+       <p style="color: orange;">1兑1<span style="color: gray;">起</span></p>
+
+
+    </div>
+    <div class="content11">
+        <img class="left" src="./img/17-z.png" alt="">
+    <p>2020.06.19-06.28</p>
+    <p>聚橙制作 | 外百老汇怦然心动恋爱音乐剧《长腿叔叔》-上海站</p>
+        <p>上海 | 上汽橙剧场·可当代艺术中心</p>
+       <p style="color: orange;">1兑1<span style="color: gray;">起</span></p>
+
+
+    </div>
+    </div>
+         
+         
+            
+</body>
+<script>
+     $(".a2").click(function(){
+    $(".ul").slideToggle()
+   
+})
+</script>
+</html>

@@ -99,7 +99,7 @@
 </div>
 <div class="content7">
     
-   <a href="#"> <img src="./img/1.4-z.jpg" alt="">
+   <a href="page3-z.html"> <img src="./img/1.4-z.jpg" alt="">
     <div class="content7_right">
         <p  class="p3">城市戏剧499套票</p>
         <p class="gray">有效期:6个月</p>
@@ -109,7 +109,7 @@
 </div>
 <div class="content8">
    
- <a href="#">   <img src="./img/1.5-z.jpg" alt="">
+ <a href="page4-z.html">   <img src="./img/1.5-z.jpg" alt="">
     <div class="content8_right">
         <p  class="p3">199元剧场体验劵</p>
         <p class="gray">有效期:12个月</p>
@@ -119,7 +119,7 @@
 </div></a>
 </div>
 <div class="content9">
-   <a href="#"> 
+   <a href="page5-z.html"> 
     <img src="./img/1.6-z.jpg" alt="">
     <div class="content9_right">
         <p  class="p3">欢乐家庭卡PLUS</p>
@@ -131,7 +131,7 @@
    
 <div class="content10">
     <p>城市次卡</p>
-   <a href="#"> 
+   <a href="page6-z.html"> 
     <img src="./img/1.8-z.jpg" alt="">
     <div class="content10_right">
         <p  class="p3">兴安盟文旅惠民卡</p>
@@ -141,7 +141,7 @@
 </div></a>
     </div>
 <div class="content11">
-   <a href="#"> 
+   <a href="page7-z.html"> 
     <img src="./img/1.9-z.jpg" alt="">
     <div class="content11_right">
         <p  class="p3">固安大剧院尊享卡</p>
@@ -152,7 +152,7 @@
     </div>
    
 <div class="content12">
-   <a href="#"> 
+   <a href="page8-z.html"> 
     <img src="./img/1.10-z.jpg" alt="">
     <div class="content12_right">
         <p  class="p3">乌兰牧骑宫尊享卡</p>
@@ -162,7 +162,7 @@
 </div></a>
     </div>
 <div class="content13">
-   <a href="#"> 
+   <a href="page9-z.html"> 
     <img src="./img/1.11-z.jpg" alt="">
     <div class="content13_right">
         <p  class="p3">合肥99元惠民卡</p>
@@ -172,7 +172,7 @@
 </div></a>
     </div>
 <div class="content14">
-   <a href="#"> 
+   <a href="page10-z.html"> 
     <img src="./img/1.12-z.jpg" alt="">
     <div class="content14_right">
         <p  class="p3">柳州99元惠民卡</p>
@@ -182,7 +182,7 @@
 </div></a>
     </div>
 <div class="content15">
-   <a href="#"> 
+   <a href="page11-z.html"> 
     <img src="./img/1.13-z.jpg" alt="">
     <div class="content15_right">
         <p  class="p3">固安大剧院惠民卡</p>
@@ -192,7 +192,7 @@
 </div></a>
     </div>
 <div class="content16">
-   <a href="#"> 
+   <a href="page12-z.html"> 
     <img src="./img/1.14-z.jpg" alt="">
     <div class="content16_right">
         <p  class="p3">济南99元文化惠民卡</p>
@@ -205,13 +205,26 @@
         <ul>
             <li>购买新卡   <small style="margin-left:20px;">|</small></li>
          
-            <li>绑定新卡  <small style="margin-left:20px;">|</small></li>
+            <li class="card">绑定新卡  <small style="margin-left:20px;">|</small></li>
            
-            <li>我的卡包</li>
+            <li><a href="logn-z.html" class="bag">我的卡包</a></li>
         </ul>
     </div>
+
     </div>
-  
+    <div class="content18" style="width: 100%; height: 665px; background-color: white;position: fixed;bottom: 0; left: 0; right: 0; overflow: hidden;
+ display: none;    transition: 0.3s ease-out;
+
+    transform: translateY(0);">
+        <span class="glyphicon glyphicon-remove-circle
+        " aria-hidden="true" style="position: absolute;right: 0;font-size: 30px;" id="circle"></span>
+        <h2 style="margin:20px">绑定欢聚橙卡</h2>
+        <div style="width: 100%; height: 50px;border-bottom: 1px solid gray;margin:20px;font-size: 25px;"><span>卡号</span><input type="text" placeholder="请输入卡号" style="border:0px;outline:none;margin-left: 10px;"type="text"></div>
+        <div style="width: 100%; height: 50px;border-bottom: 1px solid gray;margin:20px;font-size: 25px;"><span>密码</span><input type="password" placeholder="请输入密码" style="border:0px;outline:none;margin-left: 10px;"type="text"></div>
+       <p style="width: 100%;height: 60px;
+       position: absolute;bottom: 50px;background-color: orangered;text-align: center;line-height: 60px;color: white;font-size: 25px;border-radius: 30px;">绑定到账号</p>
+
+            </div>
 </body>
 <script>
     $(function () {
@@ -297,5 +310,14 @@ $(".a2").click(function(){
     $(".ul").slideToggle()
    
 })
+$(".card").click(function(){
+    $(".content18").css("display","block");
+    $("body").css("backgroundColor","gray");
+  
+})
+$("#circle").click(function(){
+    $(".content18").css("display","none");
+    $("body").css("backgroundColor","white");
+})
 </script>
-</html>
+</html> 
