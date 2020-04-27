@@ -28,10 +28,10 @@ $reslut = $connect->query($select);
   $attr = $reslut->fetch_row();
 if($attr[0]===$pwd&&!empty($pwd))//处理验证两个密码是不是相等以外并且还不能为空
  {
-    echo '<script language="JavaScript">;alert("登录成功");location.href="index1-z.html";</script>;'; 
+    echo '<script language="JavaScript">;alert("登录成功");location.href="http://localhost/juooo/index1-z.html";</script>;'; 
  }
  else
  {
-    echo '<script language="JavaScript">;alert("用户名或者秘密错误,请重新输入");location.href="logn-z.html";</script>;';
- }
+    echo '<script language="JavaScript">;alert("用户名或者秘密错误,请重新输入");location.href="http://localhost/juooo/logn-z.html";</script>;';
+ };
 ?>
