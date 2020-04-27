@@ -750,7 +750,7 @@
                     }
                 }
             }
-            xhr.open('GET', 'http://localhost/juooo/data-g.php?page=' + data, true);
+            xhr.open('GET', 'http://localhost/juooo/php/data-g.php?page=' + data, true);
             xhr.send()
         }
         //加载更多
@@ -838,8 +838,7 @@
         // 中间导航结束
         //点击显示
         $("#morecity").on("click", () => {
-            //  $(this).children().hasClass("here").nextAll().toggleClass("hide")
-            console.log($(".here").nextAll().toggleClass("hide"))
+            $(".here").nextAll().toggleClass("hide")
         })
 
     </script>
