@@ -9,25 +9,25 @@
  $password="123456";
  $mysql="user-value";
  $connect=new mysqli($servername,$name,$password,$mysql);
- if($connect->connect_error) { 
-   die("数据库连接失败:".$connect->connect_error);
-}
-echo "数据库连接成功";
-if(preg_match("/^[_a-zA-Z0-9]{1,}$/",$_POST["admin"])&&preg_match("/^[a-zA-Z0-9]{6,}$/",$_POST["pwd"])) {
-  echo '<script language="JavaScript">;alert("注册成功");location.href="http://localhost/juooo/logn-z.html";</script>;';
+//  if($connect->connect_error) { 
+//    die("数据库连接失败:".$connect->connect_error);
+// }
+// echo "数据库连接成功";
 
+if(preg_match("/^[a-zA-Z0-9]{1,}$/",$_POST["admin"])&&preg_match("/^[a-zA-Z0-9]{6,}$/",$_POST["pwd"])) {
+  $admin=$_POST["admin"];
+  $pwd=$_POST["pwd"];
+  $insert="insert into user (id,password)values('$admin','$pwd');";
+  if($connect->query($insert)) {
+    echo "数据插入成功";
+}else {
+    echo "数据插入失败";
+};
+ echo '<script language="JavaScript">;alert("注册成功");location.href="http://localhost/juooo/logn-z.html";</script>;';
   }
   else{
     echo '<script language="JavaScript">;alert("注册失败");location.href="http://localhost/juooo/regist-z.html";</script>;';   
   };
-  $admin=$_POST["admin"];
-  $pwd=$_POST["pwd"];
-  $insert="insert into user (id,password) values ('$admin','$pwd');";
-//   if($connect->query($insert)) {
-//     echo "数据插入成功";
-// }else {
-//     echo "数据插入失败";
-// };
 
 
 
